@@ -3,6 +3,6 @@
 
 <img src="https://buzdagiyayinevi.com/wp-content/uploads/2022/02/Python-Crash-Course-Kapak-scaled.jpg" target="_blank" alt="Kapsamlı Python Kursu: Programlamaya Uygulamalı ve Proje Tabanlı Giriş kitabı sayfası" width="200" height=auto>
 
-<a href="https://github.com/mtahakoroglu/python/tree/main/b%C3%B6l%C3%BCm-01" target="_blank">Hafta 1-2-3: Değişkenler ve Basit Veri Tipleri</a><br>
+<a href="https://github.com/mtahakoroglu/gumushane-EEM-bilgisayar-programlama/tree/main/Python/hafta-1-2-3" target="_blank">Hafta 1-2-3: Değişkenler ve Basit Veri Tipleri</a><br>
 
-<a href="https://github.com/mtahakoroglu/python/tree/main/b%C3%B6l%C3%BCm-03" target="_blank">Hafta 4: Listelere Giriş</a>
+<a href="https://github.com/mtahakoroglu/gumushane-EEM-bilgisayar-programlama/tree/main/Python/hafta-4-5" target="_blank">Hafta 4-5: Listelere Giriş</a>
