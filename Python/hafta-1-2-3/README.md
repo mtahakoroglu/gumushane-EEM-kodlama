@@ -7,8 +7,17 @@
 print("Hello Python world!")
 ```
 
+<h3>DERSTE GitHub KULLANIMI</h3>
+<p align="justify">Bilgisayarınızda git yüklü olmalı. İlk olarak PS açıp, bilgisayarınızda çalışacağınız dizine gidip orada</p>
+
+```
+git clone https://github.com/mtahakoroglu/gumushane-EEM-bilgisayar-programlama.git
+```
+
+<p align="justify">komutunu koşturursanız o zaman bulunduğunuz dizine ders sayfamızdaki bilgiler ve kodlar indirilecektir (<a href="https://youtube.com">GitHub clone Video izleyin</a>). İlerleyen haftalarda her zaman <b>clone</b> komutuyla sıfırdan indirme yapmayıp, hocanın kod deposuna koyduğu yeni materyalleri <b>pull</b> komutuyla indirerek bilgisayarınızdaki derse ait klasörü güncelleyebiliriniz.</p>
+
 <h3>DEĞİŞKENLER ve BASİT VERİ TİPLERİ</h3>
-<p align="justify">Bu bölümde değişkenlere (variables) ve basit veri tiplerine (data types) bakarken aynı zamanda <b>print()</b> komutuyla ekrana değişkenleri içeren ifadeler yazmayı <b>formatted string</b> ile yapacağız. Verileri kendimiz kodda tanımlamak yerine kullanıcıdan <b>input()</b> komutu ile alacağız. Bu komutun döndürdüğü bütün değişkenlerin tipinin <b>string</b> olduğunu görünce tam sayı (integer) ve ondalıklı sayı (floating point number veya decimal number) olarak girilen değerleri nasıl doğru biçimde yorumlayabileceğimizi göreceğiz. Son olarak da yine basit bir veri tipi olan Boolean değişkenlere bakıp ilk <b>if-else</b> koşullu ifademizi yazarak ekrana duruma göre bir yazı yazdıracağız. <b>Eğer-ise</b> şartlı ifadelerinde kullanılan Boolean değişkenler aynı zamanda gelecek haftalarda öğreneceğimiz döngülerde de kullanılacağından Boolean değişkenleri kavramak bizim için çok önemli.</p>
+<p align="justify">Bu bölümde değişkenlere (variables) ve basit veri tiplerine (data types) bakarken aynı zamanda <b>print()</b> komutuyla ekrana değişkenleri içeren ifadeler yazmayı <b>formatted string</b> ile yapacağız. Verileri kendimiz kodda tanımlamak yerine kullanıcıdan <b>input()</b> komutu ile alacağız. Bu komutun döndürdüğü bütün değişkenlerin tipinin <b>string</b> olduğunu görünce tam sayı (integer) ve ondalıklı sayı (floating point number veya decimal number) olarak girilen değerleri nasıl doğru biçimde yorumlayabileceğimizi göreceğiz. Son olarak da yine basit bir veri tipi olan Boolean değişkenlere bakıp ilk <b>if-else</b> koşullu ifademizi yazarak ekrana duruma göre değişiklik gösteren bir yazı yazdıracağız. <b>Eğer-ise</b> şartlı ifadelerinde kullanılan Boolean değişkenler aynı zamanda gelecek haftalarda öğreneceğimiz döngülerde de kullanılacağından Boolean değişkenleri kavramak bizim için çok önemli. Bu sayfadaki kodların koşturulmasını izlemek için <a href="https://youtube.com">tıklayınız</a>.</p>
 
 <b>hello_world_variables.py</b>
 
