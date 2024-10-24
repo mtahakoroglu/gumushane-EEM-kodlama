@@ -7,7 +7,7 @@
 git pull
 ```
 
-<p align="justify">komutuyla "gumushane-EEM-bilgisayar-programlama" yerel klasörünüzü güncelleyebilirsiniz. İlgili videoyu <a href="youtube.com">izleyin</a>.</p>
+<p align="justify">komutuyla "gumushane-EEM-bilgisayar-programlama" yerel klasörünüzü güncelleyebilirsiniz. İlgili videoyu <a href="https://youtu.be/q27HubmtPhc">izleyin</a>.</p>
 
 
 <h4>BASİT BİR LİSTE ve LİSTENİN ELEMANLARINA ERİŞİM</h4>
