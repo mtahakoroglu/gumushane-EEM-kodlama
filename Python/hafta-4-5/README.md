@@ -76,3 +76,27 @@ print(f"names[:2] + [names[3]] + names[-2:] = {names[:2] + [names[3]] + names[-2
 ```
 
 <img src="./resim/list-slicing.jpg" alt="ana listeyi slicing kullanarak alt listelere ayırma" width=450 height=auto>
+
+<h4>DİNAMİK LİSTE OLUŞTURMA</h4>
+
+<p align="justify">Listelere ait <b>append()</b> isimli metot ile kullanıcı tarafından girişi yapılan liste elemanlarını sıra sıra listeye kaydedelim ve en sonunda hem <b>len()</b> komutuyla hem de kendi sayıcımızla listenin uzunluğunu hesaplayarak liste ile ekrana basalım. İlgili videoyu izlemek için <a href="https://youtu.be/z_o6j1uvPYU" target="_blank">tıklayınız</a>.</p>
+
+```
+names = []
+
+k = 0 # listeye eklenen isimleri kendimiz sayalım
+while True:
+    s = int(input("İsim eklemek için 1'e, programı sonlandırmak için 2'a basınız: "))
+    if s == 1:
+        names.append(input("İsim giriniz: "))
+        k += 1 # k = k+1
+    elif s == 2:
+        print("Program sonlandırıldı.")
+        break
+    else:
+        print("Hatalı giriş yaptınız! Lütfen tekrar deneyiniz.")
+
+print(f"names = {names}") # isimler listesi
+print(f"names isimli listenin uzunluğu: {len(names)}") # isimler listesinin uzunluğu
+print(f"names isimli listenin kendi sayımımıza göre uzunluğu: {k}") # isimler listesinin uzunluğu
+```
