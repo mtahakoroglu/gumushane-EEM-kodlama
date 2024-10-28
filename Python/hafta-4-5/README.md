@@ -10,8 +10,8 @@ git pull
 <p align="justify">komutuyla "gumushane-EEM-bilgisayar-programlama" yerel klasörünüzü güncelleyebilirsiniz. İlgili videoyu <a href="https://youtu.be/q27HubmtPhc">izleyin</a>.</p>
 
 
-<h4>BASİT BİR LİSTE ve LİSTENİN ELEMANLARINA ERİŞİM</h4>
-<p align="justify">İlk önce basit bir liste oluşturalım. Bu liste kişi isimlerinden oluşsun ve ismi <b>names</b> olsun. Dolayısıyla bu listenin elemanlarının veri tipi (data type) string olacaktır. Aşağıdaki kodun yazıldığı ve koşturulduğu videoyu izlemek için <a href="https://youtu.be/BDl163lYLQ0" target="_blank">tıklayınız</a>.</p>
+<h4>BASİT BİR LİSTE ve INDEX ile LİSTENİN ELEMANLARINA ERİŞİM</h4>
+<p align="justify">İlk önce basit bir liste oluşturalım. Bu liste kişi isimlerinden oluşsun ve ismi <b>names</b> olsun. Dolayısıyla bu listenin elemanlarının veri tipi (data type) string olacaktır. Aşağıdaki kod ile igili videoyu izlemek için <a href="https://youtu.be/BDl163lYLQ0" target="_blank">tıklayınız</a>. Listenin elemanlarına erişmek için <b>index</b> (Türkçesi <b>fihrist</b>) kullanılır.</p>
 
 <p align="justify">ÖNEMLİ NOT: Bazı arkadaşlarımız normal parantez () ile kare parantezi [] ve dalgalı parantezi {} karıştırıyor. Liste oluştururken İngilizce'de <b>square brackets</b> denilen kare parantez kullanılıyor. Ekrana değişkenleri bastırmak için <b>formatted string</b> diye bilinen f-string kullanmıştık. Bu f-string'lerin içine değişkenleri İngilizce'de <b>curly brace</b> diye bilinen dalgalı parantez kullanarak yerleştirmiştik. Eğer normal parantez kullanılan yerde kare parantez veya dalgalı parantez kullanırsanız veya benzeri bir yanlış yaparsanız o zaman Python kodunuz hata verir. Bu hata için <a href="https://youtu.be/svwxJ6BKG1o">videoyu izleyiniz</a>.</p>
 
@@ -35,9 +35,12 @@ for name in names:
     print(name)
 ```
 
-<h4>BİRDEN ÇOK LİSTE ve EKRANA FOR DÖNGÜSÜ ile LİSTE BİLGİLERİNİN YAZDIRILMASI</h4>
+<h4>ELEMANLARI DEĞİŞİK VERİ TİPLERİ OLAN LİSTELER</h4>
 
-<p align="justify">Yukarıda ismi <b>names</b> olan elemanlarının veri tipi (data type) <b>string</b> olan bir liste tanımlamıştık. Burada o listeye eşlik eden üç ayrı liste daha tanımlayıp bu listelerin elemanlarını f-string kullanarak ekrana yazdıralım. İlgili videoyu izlemek için <a href="https://youtu.be/KnJXExjCgqE">tıklayınız</a>. Burada listelerin elemanlarını teker teker ekrana yazdırmak için bir <b>for</b> döngüsü kullanıyoruz. Bu konuyu daha işlemediğimizden ve tam olarak <b>syntax</b>'ini bilmediğimizden GitHub Co-Pilot'dan yardım aldık. Videoda görebilirsiniz.</p>
+<p align="justify">Yukarıda ismi <b>names</b> olan elemanlarının veri tipi (data type) <b>string</b> olan bir liste tanımlamıştık. Burada o listeye eşlik eden üç ayrı liste daha tanımlayıp bu listelerin elemanlarını f-string kullanarak ekrana yazdıralım. İlgili videoyu izlemek için <a href="https://youtu.be/KnJXExjCgqE">tıklayınız</a>.</p>
+
+<h5>FOR DÖNGÜSÜ ile LİSTE ELEMANLARINI F-STRING KULLANARAK EKRANA YAZIRMAK</h5>
+<p>Burada listelerin elemanlarını teker teker ekrana yazdırmak için bir <b>for</b> döngüsü kullanıyoruz. Bu konuyu daha işlemediğimizden ve tam olarak <b>syntax</b>'ini bilmediğimizden GitHub Co-Pilot'dan yardım aldık. Videoda görebilirsiniz.</p>
 
 <b>multiple_list.py</b>
 
@@ -53,3 +56,23 @@ for i in range(len(names)):
     else:
         print(f"{names[i]} bugün sınıfta yoktur.")
 ```
+
+<h4>BİR LİSTENİN ALT LİSTELERİNE SLICING ile (INDEX'ler KULLANARAK) ERİŞİM</h4>
+
+<p align="justify">Bu kodda <b>names</b> isimli listeden değişik alt listeleri ve bazı durumlarda bu listelerin kombinasyonlarını <b>INDEX</b> değerlerini kullanarak <b>names</b> isimli ana listemizden kesiyoruz (<b>SLICING</b>). Ardından f-string kullanarak konsol ekranına batırıyoruz. İlgili videoyu izlemek için <a href="https://youtu.be/hDPR_cEmaoM">tıklayınız</a>.</p>
+
+<b>list_slicing.py</b>
+
+```
+names = ["Önder", "Furkan", "Sefa", "Safa", "Patrick", "Mahmoud", "Cindy"]
+print(f"names = {names}") # isimler listesi
+print(f"names[0:3] = {names[0:3]}") # ['Önder', 'Furkan', 'Sefa']
+print(f"names[4:6] = {names[4:6]}") # ['Patrick', 'Mahmoud']
+print(f"names[-2:] = {names[-2:]}") # ['Mahmoud', 'Cindy']
+# Safa ile Patrick isimlerini yazdırmak istemiyoruz. Diğerlerini yazıralım.
+print(f"names[:3] + names[5:] = {names[:3] + names[5:]}") # ['Önder', 'Furkan', 'Sefa', 'Mahmoud', 'Cindy']
+# Sefa ile Patrick isimlerini yazdırmak istemiyoruz. Diğerlerini yazıralım.
+print(f"names[:2] + names[3] + names[-2:] = {names[:2] + names[3] + names[-2:]}") # ['Önder', 'Furkan', 'Safa', 'Mahmoud', 'Cindy']
+```
+
+<img src="./image/list-slicing.jpg" alt="listeyi slicing metodu ile alt listelere ayırma" width=400 height=auto>
