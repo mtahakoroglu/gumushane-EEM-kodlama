@@ -37,10 +37,10 @@ for name in names:
 
 <h4>ELEMANLARI DEĞİŞİK VERİ TİPLERİ OLAN LİSTELER</h4>
 
-<p align="justify">Yukarıda ismi <b>names</b> olan elemanlarının veri tipi (data type) <b>string</b> olan bir liste tanımlamıştık. Burada o listeye eşlik eden üç ayrı liste daha tanımlayıp bu listelerin elemanlarını f-string kullanarak ekrana yazdıralım. İlgili videoyu izlemek için <a href="https://youtu.be/KnJXExjCgqE">tıklayınız</a>.</p>
+<p align="justify">Yukarıda ismi <b>names</b> olan elemanlarının veri tipi (data type) <b>string</b> olan bir liste tanımlamıştık. Burada o listeye eşlik eden üç ayrı liste daha tanımlayacağız.</p>
 
 <h5>FOR DÖNGÜSÜ ile LİSTE ELEMANLARINI F-STRING KULLANARAK EKRANA YAZIRMAK</h5>
-<p>Burada listelerin elemanlarını teker teker ekrana yazdırmak için bir <b>for</b> döngüsü kullanıyoruz. Bu konuyu daha işlemediğimizden ve tam olarak <b>syntax</b>'ini bilmediğimizden GitHub Co-Pilot'dan yardım aldık. Videoda görebilirsiniz.</p>
+<p> Bu kısımda birden fazla basit liste tanımlıyoruz. Bu listelerin index'leri aynı olan elemanlarını uygun bir f-string ile mânâlı bir cümle oluşturacak şekilde ekrana yazdırmak için bir <b>for</b> döngüsü kullanıyoruz. Döngüleri henüz öğrenmediğimizden dolayı <b>GitHub Co-Pilot</b>'dan yardım aldık. İlgili video için <a href="https://www.youtube.com/watch?v=KnJXExjCgqE" target="_blank">tıklayınız</a>. Kodun üzerindeki yorumlardan da kodu anlayabilirsiniz.</p>
 
 <b>multiple_list.py</b>
 
@@ -49,17 +49,17 @@ names = ["Önder", "Furkan", "Sefa", "Safa", "Patrick", "Mahmoud", "Cindy"]
 ages = [20, 21, 21, 20, 23, 25, 24]
 weight = [73.6, 75.2, 64.1, 67.9, 71.1, 68.1, 50.3]
 attendance = [True, True, True, True, False, True, True]
-# for döngüsü ile listedeki öğrencilerin isimlerini, yaşlarını, kilolarını ve devamsızlık durumlarını ekrana yazdıralım
+# for döngüsü ile listedeki öğrencilerin isimlerini, yaşlarını ve kilolarını ekrana yazdıralım
 for i in range(len(names)):
-    if attendance[i]:
+    if attendance[i]: # eğer öğrenci mevcut ise bilgileri yazdır
         print(f"{names[i]} {ages[i]} yaşında olup {weight[i]} kg ağırlığındadır.")
-    else:
+    else: # eğer öğrenci yok ise o zaman bilgileri yazdırma
         print(f"{names[i]} bugün sınıfta yoktur.")
 ```
 
 <h4>BİR LİSTENİN ALT LİSTELERİNE SLICING ile (INDEX'ler KULLANARAK) ERİŞİM</h4>
 
-<p align="justify">Bu kodda <b>names</b> isimli listeden değişik alt listeleri ve bazı durumlarda bu listelerin kombinasyonlarını <b>INDEX</b> değerlerini kullanarak <b>names</b> isimli ana listemizden kesiyoruz (<b>SLICING</b>). Ardından f-string kullanarak konsol ekranına batırıyoruz. İlgili videoyu izlemek için <a href="https://youtu.be/hDPR_cEmaoM">tıklayınız</a>.</p>
+<p align="justify">Bu kodda <b>names</b> isimli ana listeden <b>INDEX</b> değerlerini kullanarak değişik alt listeleri ve bazı durumlarda bu listelerin kombinasyonlarını kesiyoruz (<b>SLICING</b>). İlgili videoyu izlemek için <a href="https://youtu.be/hDPR_cEmaoM" target="_blank">tıklayınız</a>.</p>
 
 <b>list_slicing.py</b>
 
@@ -75,4 +75,4 @@ print(f"names[:3] + names[5:] = {names[:3] + names[5:]}") # ['Önder', 'Furkan',
 print(f"names[:2] + [names[3]] + names[-2:] = {names[:2] + [names[3]] + names[-2:]}") # ['Önder', 'Furkan', 'Safa', 'Mahmoud', 'Cindy']
 ```
 
-<img src="./image/list-slicing.jpg" alt="listeyi slicing metodu ile alt listelere ayırma" width=400 height=auto>
+<img src="./resim/list-slicing.jpg" alt="ana listeyi slicing kullanarak alt listelere ayırma" width=450 height=auto>
