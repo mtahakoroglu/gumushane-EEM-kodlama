@@ -7,4 +7,4 @@
 
 <a href="https://github.com/mtahakoroglu/gumushane-EEM-bilgisayar-programlama/tree/main/Python/hafta-4-5" target="_blank">Hafta 4-5: Listelere Giriş</a>
 
-<a href="https://github.com/mtahakoroglu/gumushane-EEM-bilgisayar-programlama/tree/main/Python/hafta-6-7" target="_blank">Hafta 6-7: Listelere Giriş</a>
+<a href="https://github.com/mtahakoroglu/gumushane-EEM-bilgisayar-programlama/tree/main/Python/hafta-6-7" target="_blank">Hafta 6-7: Listelerle Çalışmak</a>
