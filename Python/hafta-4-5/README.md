@@ -81,6 +81,8 @@ print(f"names[:2] + [names[3]] + names[-2:] = {names[:2] + [names[3]] + names[-2
 
 <p align="justify">Listelere ait <b>append()</b> isimli metot ile kullanıcı tarafından girişi yapılan liste elemanlarını sıra sıra listeye kaydedelim ve en sonunda hem <b>len()</b> komutuyla hem de kendi sayıcımızla listenin uzunluğunu hesaplayarak liste ile ekrana basalım. İlgili videoyu izlemek için <a href="https://youtu.be/z_o6j1uvPYU" target="_blank">tıklayınız</a>.</p>
 
+<b>user_input.py</b>
+
 ```
 names = []
 
