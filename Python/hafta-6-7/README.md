@@ -16,7 +16,7 @@ print(f"mixed_list[-1][0] = {mixed_list[-1][0]}")
 
 <h4>LİSTENİN İSTEDİĞİMİZ BİR YERİNE ELEMAN EKLEMEK</h4>
 
-<p align="justify">Daha önceden <b><i>append()</i></b> metoduyla bir listeye sonundan eleman eklemiştik. Şimdi ise listenin istediğimiz bir konumuna eleman eklemek istiyoruz. Bunun için <b><i>insert()</i></b> isimli liste metodunu kullanacağız. Aşağıdaki örnekte dört isimli bir listenin ikinci sırasına (index değeri bir eksiği olacaktır) yeni bir isim ekleyelim.</p>
+<p align="justify">Daha önceden <b><i>append()</i></b> metoduyla bir listeye sonundan eleman eklemiştik. Şimdi ise listenin istediğimiz bir konumuna eleman eklemek istiyoruz. Bunun için <b><i>insert()</i></b> isimli liste metodunu kullanacağız. Aşağıdaki örnekte listenin değişik konumlarına yeni isimler eklerken bir de oyuncu değişikliği benzeri öğrenci değişikliği yapıyoruz.</p>
 
 <b>adding_elements_to_list.py</b>
 
@@ -52,7 +52,7 @@ for i in range(len(names)):
 
 <h4>TUPLE (ELEMANLARI DEĞİŞTİRİLEMEYEN LİSTE - IMMUTABLE LIST)</h4>
 
-<p align="justify">Listelerin elemanlarını yeniden atayabiliyor ve hatta istediklerimizi silebiliyorduk. Burada ismi geçen <b>TUPLE</b> veri yapısında elemanları değiştiremiyoruz. Ancak aynı isimle yeniden bir <b>TUPLE</b> tanımlayabiliriz. <b>TUPLE</b> veri yapısı bazen bir satırda birden fazla değişken atamak için kullanılarak yer kazandırdığından bu yapıyı sık sık tercih ediyoruz.</p>
+<p align="justify">Listelerin elemanlarını yeniden atayabildik ve hatta istediklerimizi silebildik. Burada ismi geçen <b>TUPLE</b> veri yapısında ise elemanları değiştiremiyoruz (immutable). Ancak aynı isimle yeniden bir <b>TUPLE</b> tanımlayabiliyoruz. <b>TUPLE</b> veri yapısı bazen bir satırda birden fazla değişken atamak için kullanılarak yer kazandırdığından bu yapıyı sık sık tercih ediyoruz.</p>
 
 <b>tuple_example.py</b>
 
