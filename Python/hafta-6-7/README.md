@@ -1,4 +1,4 @@
-<h3>LİSTELERLE ÇALIŞMAK (WORKING with LISTS)</h3>
+<h3>LİSTELERLE ÇALIŞMA (WORKING with LISTS)</h3>
 
 <h4>KARIŞIK LİSTE</h4>
 <p align="justify">Şu ana kadar (4. ve 5. haftalarda) elemanları string, integer, float veya bool veri tipi olan listelerle çalıştık. Şimdi elemanları karışık veri tipleri olan hatta bir elemanı liste bile olabilen bir liste oluşturalım. İlgili videoyu izlemek için <a href="https://www.youtube.com/watch?v=ZvD-vRrwTZA">tıklayınız</a>. Videoda yer almayan son kısımda <b>mixed_list</b> isimli karışık listenin sonuna eklediğimiz listenin ilk elemanına <b><i>mixed_list[-1][0]</i></b> eriştik.</p>
@@ -30,7 +30,7 @@ names[3] = "Abdurrahman"
 names.append("Önder")
 ```
 
-<h4>LİSTENİN İSTEDİĞİMİZ BİR YERİNDENE ELEMAN ÇIKARMAK/SİLMEK</h4>
+<h4>LİSTENİN İSTEDİĞİMİZ BİR YERİNDEN ELEMAN ÇIKARMAK/SİLMEK</h4>
 
 <p align="justify">Şu ana kadar listenin değişik konumlarına değişik veri tiplerinde elemanlar ekledik. Şimdi ise değişik liste metotlarıyla arzu edilen konumlardan elemanları çıkarmaya bakalım. Bu iş için <b><i>del</i></b>, <b><i>pop()</i></b>, <b><i>remove()</i></b> gibi farklı metotlar kullanacağız.</p>
 
