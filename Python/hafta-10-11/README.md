@@ -1,7 +1,7 @@
 <h3>LİSTELERLE ÇALIŞMA (WORKING with LISTS) - SON BİR ÖRNEK</h3>
 
 <h4>SON BİR ÖRNEK</h4>
-<p align="justify">Ara sınavdan hemen önceki son dersimizin son örneğinde Python listelerine ait <b>pop()</b> metodunu kullanarak listeden elemanları atmıştık. Fakat bunu sınavda sormamıştık. Burada <b>pop()</b> metodunu da kullanarak son bir örnek yaparak yavaştan <b>numpy</b> paketi kullanmaya geçeceğiz. Bu örnekte ayrıca Python'da <b>debug</b> modunda kodu istediğimiz satırlarda durdura durdura kodu çalıştırmayı göreceğiz. İngilizce'de böcek kelimesinin karşılığı <b>bug</b>. Dolayısıyla <b>debug</b> böceklerden temizlemek mânâsına geliyor. Buradaki analoji kodumuzu hatalardan temizlemek oluyor yâni. İlgili videoyu izlemek için tıklayınız.</p>
+<p align="justify">Ara sınavdan hemen önceki son dersimizin son örneğinde Python listelerine ait <b>pop()</b> metodunu kullanarak listeden elemanları atmıştık. Fakat bunu sınavda sormamıştık. Burada <b>pop()</b> metodunu da kullanarak son bir örnek yaparak yavaştan <b>numpy</b> paketi kullanmaya geçeceğiz. Bu örnekte ayrıca Python'da <b>debug</b> modunda kodu istediğimiz satırlarda durdura durdura kodu çalıştırmayı göreceğiz. İngilizce'de böcek kelimesinin karşılığı <b>bug</b>. Dolayısıyla <b>debug</b> böceklerden temizlemek mânâsına geliyor. Buradaki analoji kodumuzu hatalardan temizlemek oluyor yâni. İlgili videoyu izlemek için <a href="https://www.youtube.com/watch?v=McnKHVyqoqQ">tıklayınız</a>.</p>
 
 <b>list_methods_exercise.py</b>
 
