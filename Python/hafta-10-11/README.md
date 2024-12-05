@@ -27,7 +27,7 @@ print(f"names = {names}")
 
 <h4>LİSTEDEN ÇIKARDIĞIMIZ ELEMANLARI AYRI BİR LİSTEDE TOPLAMAK</h4>
 
-<p align="justify">Dersin ikinci kısmında <b>numpy</b> pkaeti kullanarak matrislerde elemanlara erişmeye bakacaktık. Ancak dersin içinde Sefa Dalma arkadaşımızın bir sorusu/önerisi üzerine elimizde bulunan bir isim listesinden baş harfi 's' ile başlayan isimleri çıkarıp bu isimleri ayrı bir listeye kaydetme probleminin kodunu yazmaya çalıştık. Derste for döngüsü kullanarak yapmaya çalıştığımızda hata vermişti. Aşağıda while döngüsü ile çözümü verilen problemin videosunu izlemek için tıklayınız.</p>
+<p align="justify">Dersin ikinci kısmında <b>numpy</b> paketi kullanarak matrislerde elemanlara, alt matris ve vektörlere erişme konusuna bakacaktık. Ancak dersin içinde <a href="https://github.com/sefadalma">Sefa Dalma</a> arkadaşımızın bir sorusu/önerisi üzerine elimizde bulunan bir isim listesinden baş harfi 's' ile başlayan isimleri çıkarıp bu isimleri ayrı bir listeye kaydetme probleminin kodunu yazmaya çalıştık. Derste for döngüsü kullanarak yapmaya çalıştığımızda hata vermişti. Aşağıda while döngüsü ile çözümü verilen problemin videosunu izlemek için tıklayınız.</p>
 
 <b>popped_elements_new_list.py</b>
 
