@@ -47,3 +47,40 @@ while i < len(names):
 print(f"Çıkarılan isimler = {popped_names}")
 print(f"İlk listenin son hâli = {names}")
 ```
+
+<h4>LİSTEDEKİ NEGATİF ELEMAN SAYISINI BULMA</h4>
+
+<p align="justify">Aşağıda verilen listede yer eleman negatif eleman sayısını bulunuz.</p>
+
+<b>list_number_of_negative_elements.py</b>
+
+```
+numbers = [2, 7, -8, 12, 5, -34, 56, 15, -3] # Bir Python listesi
+print(f"numbers = {numbers}")
+print(f"numbers isimli listenin uzunluğu {len(numbers)}.")
+# numbers isimli listenin elemanlarını dolaşarak negatif eleman sayısını bulalım
+count = 0
+for number in numbers:
+    if number < 0:
+        count += 1
+print(f"numbers isimli listenin içinde {count} tane negatif sayı var.")
+```
+
+<h4>VERİLEN İSİM LİSTESİNDE İSMİ 'S' ile BAŞLAYAN KİŞİ SAYISINI BULMA</h4>
+
+<p align="justify">Aşağıda verilen isim listesinde ismi 'S' ile başlayan kişi sayısını bulalım.</p>
+
+<b>list_number_of_names_starting_with_s.py</b>
+
+```
+names = ["Abdullah", "sefa", "selin", "cindy", "patrick", "SAFA", "destinee"] # Bir Python listesi
+print(f"names = {names}")
+print(f"names isimli listenin uzunluğu {len(names)}.")
+# names isimli listenin elemanlarını dolaşarak 'S' ile başlayan isim sayısını bulalım
+i, count = 0, 0
+for i in range(len(names)):
+    if names[i][0].upper() == 'S':
+        count += 1
+    i += 1
+print(f"Verilen listede {count} adet isim 'S' ile başlıyor.")
+```
