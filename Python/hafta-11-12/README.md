@@ -16,7 +16,7 @@ pip install numpy
 
 <a href="https://www.youtube.com/watch?v=Ntocj4vgDoI"><img src="döküman/NumPy.png" alt="numpy-1d_array" width=350 height=auto></a>
 
-<b>list_methods_exercise.py</b>
+<b>numpy_1d_array.py</b>
 
 ```
 import numpy as np
