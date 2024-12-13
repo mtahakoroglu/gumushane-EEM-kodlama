@@ -68,7 +68,7 @@ print(f"numbers isimli listenin içinde {count} tane negatif sayı var.")
 
 <h4>VERİLEN İSİM LİSTESİNDE İSMİ 'S' ile BAŞLAYAN KİŞİ SAYISINI BULMA</h4>
 
-<p align="justify">Aşağıda verilen isim listesinde ismi 'S' ile başlayan kişi sayısını bulalım.</p>
+<p align="justify">Aşağıda verilen isim listesinde ismi 'S' ile başlayan kişi sayısını bulalım. İlgili videoyu izlemek için <a href="https://www.youtube.com/watch?v=Ev-qtrJJaKA">tıklayınız</a>.</p>
 
 <b>list_number_of_names_starting_with_s.py</b>
 
