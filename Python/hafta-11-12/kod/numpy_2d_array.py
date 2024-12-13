@@ -1,5 +1,5 @@
 import numpy as np
-# A matrisini oluşturalım
+
 A = np.array([[-3, 5, -4, -2, 1, 5, -2, 0, -3, 15],
             [1, 11, 12, 9, 14, 4, -3, 5, 12, 7],
             [6, -2, 14, -4, -5, 8, 5, 9, 0, 4],
@@ -18,8 +18,3 @@ d = A[-3:,-2]; print(f"d = {d}")
 e = A[0:2,-3:]; print(f"e = {e}")
 f = A[-3:,3:5]; print(f"f = {f}")
 g = A[2:4,:]; print(f"g = {g}")
-
-# print(f"A = {A}"); print(f"a = {a}")
-# print(f"b = {b}"); print(f"c = {c}")
-# print(f"d = {d}"); print(f"e = {e}")
-# print(f"f = {f}"); print(f"g = {g}")

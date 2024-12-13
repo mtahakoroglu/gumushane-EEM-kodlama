@@ -50,7 +50,7 @@ print(f"İlk listenin son hâli = {names}")
 
 <h4>LİSTEDEKİ NEGATİF ELEMAN SAYISINI BULMA</h4>
 
-<p align="justify">Aşağıda verilen listede yer eleman negatif eleman sayısını bulunuz.</p>
+<p align="justify">Aşağıda verilen listede yer eleman negatif eleman sayısını bulunuz. İlgili videoyu izlemek için <a href="https://www.youtube.com/watch?v=ok1TM6cBw8k">tıklayınız</a>.</p>
 
 <b>list_number_of_negative_elements.py</b>
 
