@@ -1,4 +1,4 @@
-<h3>NUMPY PAKETİ ile 1b-2b DİZİLER ve RASGELE SAYI ÜRETECİ</h3>
+<h3>HAFTA 11-12: NUMPY PAKETİ ile 1b-2b DİZİLER ve RASGELE SAYI ÜRETECİ</h3>
 
 <h4>BİLGİSAYARA NUMPY YÜKLEME</h4>
 <p align="justify">Bugüne kadar benzer veya ilişkili elemanlara bilgisayarın hafızasında ayrı ayrı değişkenlerle değil de tek bir değişken ismiyle erişmek istediğimizde Python listelerini kullanmıştık. Şimdi burada hızlıca <b>NumPy</b> paketini yükleyip Python listelerinde yaptığımız bir egzersizin aynısını bu sefer NumPy dizileri ve fonksiyonlarıyla gerçekleştireceğiz. İlk önce bilgisayarımıza NumPy paketini PowerShell (PS) konsolundan aşağıdaki gibi yükleyerek işe başlıyoruz.
@@ -12,7 +12,9 @@ pip install numpy
 
 <h4>NUMPY ile 1b DİZİLER</h4>
 
-<p align="justify">Daha önce Python listelerinde yaptığımız şekilde, bize verilen bir dizinin değişik yerlerine elemanla ekleyelim, değişik yerlerinden elemanları çıkaralım/silelim. Bu arada PowerShell'de hızlıca <b>numbers</b> isimli değişkenin veri tipine <b>type(numbers)</b> fonksiyonu ile bakalım.</p>
+<p align="justify">Daha önce Python listelerinde yaptığımız şekilde, bize verilen bir dizinin değişik yerlerine elemanla ekleyelim, değişik yerlerinden elemanları çıkaralım/silelim. Bu arada PowerShell'de hızlıca <b>numbers</b> isimli değişkenin veri tipine <b>type(numbers)</b> fonksiyonu ile bakalım. İlgili videoyu izlemek için aşağıdaki NumPy logosu resmine tıklayınız.</p>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/NumPy_logo_2020.svg/1200px-NumPy_logo_2020.svg.png" alt="numpy-1d_array" width=300 height=auto>
 
 <b>list_methods_exercise.py</b>
 
@@ -39,7 +41,9 @@ print(f"numbers = {numbers}")
 
 <h4>NUMPY ile 2b DİZİLER</h4>
 
-<p align="justify">Aşağıda bize NumPy'da 2b bir dizi verilmekte. Biz bu yapıya doğrusal cebirde <b>matris</b> diyoruz. Resimde gösterilen elemanlara, vektörlere ve alt matrislere aşağıdaki kodda verildiği gibi erişebiliriz. İlgili videoyu izlemek için tıklayınız.</p>
+<p align="justify">Aşağıda bize NumPy'da 2b bir dizi verilmekte. Biz bu yapıya doğrusal cebirde <b>matris</b> diyoruz. Resimde gösterilen elemanlara, vektörlere ve alt matrislere aşağıdaki kodda verildiği gibi erişebiliriz. İlgili videoyu izlemek için aşağıdaki matris resmine tıklayınız.</p>
+
+<img src="döküman/numpy_2d_array.png" alt="numpy-2d-array" width=400 height=auto>
 
 <b>numpy_2d_array.py</b>
 
