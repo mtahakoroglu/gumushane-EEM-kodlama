@@ -14,7 +14,7 @@ pip install numpy
 
 <p align="justify">Daha önce Python listelerinde yaptığımız şekilde, bize verilen bir dizinin değişik yerlerine elemanla ekleyelim, değişik yerlerinden elemanları çıkaralım/silelim. Bu arada PowerShell'de hızlıca <b>numbers</b> isimli değişkenin veri tipine <b>type(numbers)</b> fonksiyonu ile bakalım. İlgili videoyu izlemek için aşağıdaki NumPy logosu resmine tıklayınız.</p>
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/NumPy_logo_2020.svg/1200px-NumPy_logo_2020.svg.png" alt="numpy-1d_array" width=300 height=auto>
+<img <a href="https://www.youtube.com/watch?v=Ntocj4vgDoI">src="döküman/NumPy.png"</a> alt="numpy-1d_array" width=300 height=auto>
 
 <b>list_methods_exercise.py</b>
 
