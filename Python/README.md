@@ -12,3 +12,7 @@
 <a href="https://github.com/mtahakoroglu/gumushane-EEM-bilgisayar-programlama/tree/main/Python/hafta-9-10" target="_blank">Hafta 9-10: Listelerle Çalışma - Devam</a>
 
 <a href="https://github.com/mtahakoroglu/gumushane-EEM-bilgisayar-programlama/tree/main/Python/hafta-11-12" target="_blank">Hafta 11-12: Numpy 1b-2b Diziler ve Rasgele Sayı Üreteci</a>
+
+<a href="https://github.com/mtahakoroglu/gumushane-EEM-bilgisayar-programlama/tree/main/Python/hafta-13" target="_blank">Hafta 13: Fonksiyonlar</a>
+
+<a href="https://github.com/mtahakoroglu/gumushane-EEM-bilgisayar-programlama/tree/main/Python/hafta-14" target="_blank">Hafta 14: Fonsiyonlar (Anaconda ve OpenCV)</a>
