@@ -1,4 +1,4 @@
-<h3>HAFTA 13: FONKSİYONLAR</h3>
+<h3>HAFTA 13: KOŞULLU İFADELER TEKRAR ve FONKSİYONLARA GİRİŞ</h3>
 
 <h4>Python Listelerinde Döngü, Koşullu İfade ve String Metotları Egzersizleri</h4>
 
@@ -70,8 +70,71 @@ else:
     print("You are an elder.")
 ```
 
-<h4>Bir Çemberin Çevre ve Alanını Fonksiyon ile Bulma</h4>
+<h4>Bir Çemberin Çevresini ve Alanını Fonksiyon ile Bulma</h4>
 
-<p align="justify">Bugüne kadar Python listeleri ve NumPy dizileri üzerinde döngü ile dolaşarak bir takım işlemler yaptık. Bu işlemleri kodun içinde yeri geldiğinde gerçekledik. Artık kendi fonksiyonlarımızı kendimiz yazarak bu işlemleri otomatik hâle getireceğiz. Burada çemberin çevresini ve alanını hesapladığımız kodda kendi fonksiyonumuzu yazmayı görürken bir sonraki kod olan bir matrisi eşik değerden geçirerek binary hâle getirme meselesinde fonksiyonların kıymetini anlayacağız.</p>
+<p align="justify">Bugüne kadar Python listeleri ve NumPy dizileri üzerinde döngü ile dolaşarak bir takım işlemler yaptık. Bu işlemleri kodun içinde yeri geldiğinde gerçekledik. Artık kendi fonksiyonlarımızı kendimiz yazarak bu işlemleri otomatik hâle getireceğiz. Burada çemberin çevresini ve alanını hesapladığımız kodda kendi fonksiyonumuzu yazmayı görürken bir sonraki kod olan bir matrisi eşik değerden geçirerek binary hâle getirme meselesinde fonksiyonların niye bize gerektiğini tam mânâsıyla anlayacağız.</p>
 
-<p align="justify">Aşağıda verilen <b>circle_perimeter_area.py</b> kodunda bir çemberin çevresini ve alanını hesaplamayı kodun içinde görürken <b>circle_perimeter_area_function.py</b> isimli kodda ise bu işlemi fonksiyonla yapmayı göreceğiz.</p>
+<p align="justify">Aşağıda verilen <b>circle_perimeter_area.py</b> kodunda bir çemberin çevresini ve alanını hesaplamayı kodun içinde görürken <b>circle_perimeter_area_function.py</b> isimli kodda ise bu işlemi fonksiyonla yapmayı göreceğiz. İlgili video için <a href="https://www.youtube.com/watch?v=DovWv00Ctac&list=PLMoe16OQDeeCpsXqSpWs0LqOYUjlIu_jg&index=30">tıklayınız</a>.</p>
+
+<b>circle_perimeter_area.py</b>
+
+```
+import numpy as np
+r = float(input("Çemberin yarıçapını giriniz: "))
+perimeter = 2*np.pi*r
+area = np.pi*r**2
+print(f"Yarıçapı {r} olan çemberin çevresi {perimeter:.2f}, alanı {area:.2f}'dir.")
+```
+
+<b>circle_perimeter_area_function.py</b>
+
+```
+import numpy as np
+
+def circle_perimeter_area(radius):
+    perimeter = 2 * np.pi * radius
+    area = np.pi * radius ** 2
+    return perimeter, area
+
+r = float(input("Çemberin yarıçapını giriniz: "))
+p, a = circle_perimeter_area(r)
+
+print(f"Yarıçapı {r} olan çemberin çevresi {p:.2f}, alanı {a:.2f}'dir.")
+```
+
+<h4>Bir Matrisi Eşik Değerden Geçirerek Binary Hâle Getirmek</h4>
+
+<p align="justify">Elemanları [0-255] aralığında birer tamsayı olan 5x8'lik rasgele bir A matrisi üretiniz (numpy.random sınıfından transfer ettiğiniz randint fonksiyonu ile). Yine elemanları [0-255] aralığında birer tamsayı olan 5x8'lik rasgele bir B matrisi üretiniz (numpy.random sınıfından rand fonksiyonu ile). A ve B matrislerini veri tipi açısından hem type() fonksiyonuyla hem de numpy paketinden <b>dtype()</b> fonksiyonuyla analiz ediniz. Ardından girişi bir matris ile bir skaler (eşik değeri) olan (iki girişli), çıkışı ise binary bir matris olan (eğer giriş matrisinin elemanları eşik değerinden düşükse o zaman çıkış matrisinde tekabül eden eleman 0, aksi takdirde 255) <b>matrix_threshold()</b> isimli fonkiyon yazarak her iki matrisi de siyah-beyaz hale getiriniz (siyah 0 ile temsil edilirken beyaz 255 ile temsil edilmektedir).</a>
+
+<p align="justify">İlgili video için <a href="https://www.youtube.com/watch?v=lc80Qst1TGs&list=PLMoe16OQDeeCpsXqSpWs0LqOYUjlIu_jg&index=31">tıklayınız</a>.</a>
+
+<b>matrix_thresholding.py</b>
+
+```
+from numpy.random import randint
+from numpy.random import rand
+import numpy as np
+
+def matrix_threshold(M, threshold):
+    for i in range(M.shape[0]):
+        for j in range(M.shape[1]):
+            if M[i,j] < threshold:
+                M[i,j] = 0
+            else:
+                M[i,j] = 255
+    return M
+
+min_value, max_value = 0, 255
+r, c = 5, 8
+A = randint(min_value, max_value+1, (r,c))
+B = np.round(255*rand(r,c))
+
+print(f"A = {A}")
+A_binary = matrix_threshold(A, 100)
+print(f"A_binary = {A_binary}")
+print(f"B = {B}")
+B_binary = matrix_threshold(B, 50)
+print(f"B_binary = {B_binary}")
+print(f"A.dtype = {A.dtype}")
+print(f"B.dtype = {B.dtype}")
+```
