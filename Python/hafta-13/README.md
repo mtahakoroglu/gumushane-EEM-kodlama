@@ -32,6 +32,17 @@ for name in names:
 
 <p align="justify">Kitaptan koşullu ifadelerle ilgili bir başka örnek: <b>hayat.py</b> isimli kodun videosu için <a href="https://www.youtube.com/watch?v=SChaa65x1Lo&list=PLMoe16OQDeeCpsXqSpWs0LqOYUjlIu_jg&index=28">tıklayınız</a>.</p>
 
+<p align="justify">(Hayatın Aşamaları): Bir insanın hayatta hangi aşamada olduğunu belirten bir if-elif-else zinciri yazınız. Kullanıcıya yaşını sorarak kullanıcının girdiği değeri age değişkenine atayın ve daha sonra:</p>
+
+<ul>
+<li>Kişi 2 yaşından küçük ise bu kişinin bebek olduğunu belirten bir mesajı ekrana yazdırınız.</li>
+<li>Kişi en az 2 yaşında ama 4 yaşından küçük ise bu kişinin yürümeye yeni başlayan bir çocuk olduğunu belirten bir mesajı ekrana yazdırınız.</li>
+<li>Kişi en az 4 yaşında ama 13 yaşından küçük ise bu kişinin çocuk olduğunu belirten bir mesajı ekrana yazdırınız.</li>
+<li>Kişi en az 13 yaşında ama 20 yaşından küçük ise bu kişinin ergen olduğunu belirten bir mesaj ekrana yazdırınız.</li>
+<li>Kişi en az 20 yaşında ama 65 yaşından küçük ise bu kişinin yetişkin olduğunu belirten bir mesajı ekrana yazdırınız.</li>
+<li>Kişi 65 yaş ve üzeri ise bu kişinin yaşlı olduğunu belirten bir mesajı ekrana yazınız.</li>
+</ul>
+
 <p align="justify"><b>hayat.py</b></p>
 
 ```
@@ -51,6 +62,17 @@ else:
 ```
 
 <p align="justify">Kitaptan koşullu ifadelerle ilgili bir başka örnek: <b>stages_in_life.py</b> isimli kodun videosu için <a href="https://www.youtube.com/watch?v=tOWbycYozGk&list=PLMoe16OQDeeCpsXqSpWs0LqOYUjlIu_jg&index=29">tıklayınız</a>.</p>
+
+<p align="justify">(Stages of Life): Write an if-elif-else chain that determines a person’s stage of life. Get the user’s age by asking him/her a related question in the console and assign the entered value to age variable and then:</p>
+
+<ul>
+<li>If the person is less than 2 years old, print a message that the person is a baby.</li>
+<li>If the person is at least 2 years old but less than 4, print a message that the person is a toddler.</li>
+<li>If the person is at least 4 years old but less than 13, print a message that the person is a kid.</li>
+<li>If the person is at least 13 years old but less than 20, print a message that the person is a teenager.</li>
+<li>If the person is at least 20 years old but less than 65, print a message that the person is an adult.</li>
+<li>If the person is age 65 or older, print a message that the person is an elder.</li>
+</ul>
 
 <b>stages_in_life.py</b>
 
