@@ -28,11 +28,11 @@ for name in names:
         print(name.lower())
 ```
 
-<h4>if - else if - else koşullu ifadeleri - Başka Bir Örnek</h4>
+<h4>Başka Bir Örnek (if-else if-else koşullu ifadeleri)</h4>
 
 <p align="justify">Kitaptan koşullu ifadelerle ilgili bir başka örnek: <b>hayat.py</b> isimli kodun videosu için <a href="https://www.youtube.com/watch?v=SChaa65x1Lo&list=PLMoe16OQDeeCpsXqSpWs0LqOYUjlIu_jg&index=28">tıklayınız</a>.</p>
 
-<p align="justify">(Hayatın Aşamaları): Bir insanın hayatta hangi aşamada olduğunu belirten bir if-elif-else zinciri yazınız. Kullanıcıya yaşını sorarak kullanıcının girdiği değeri age değişkenine atayın ve daha sonra:</p>
+<p align="justify">(Hayatın Aşamaları): Bir insanın hayatta hangi aşamada olduğunu belirleyen bir if-elif-else zinciri yazınız. Kullanıcıya yaşını sorarak kullanıcının girdiği değeri <b>age</b> değişkenine atayın ve daha sonra:</p>
 
 <ul>
 <li>Kişi 2 yaşından küçük ise bu kişinin bebek olduğunu belirten bir mesajı ekrana yazdırınız.</li>
@@ -61,9 +61,9 @@ else:
     print("Yaşlısın.")
 ```
 
-<p align="justify">Kitaptan koşullu ifadelerle ilgili bir başka örnek: <b>stages_in_life.py</b> isimli kodun videosu için <a href="https://www.youtube.com/watch?v=tOWbycYozGk&list=PLMoe16OQDeeCpsXqSpWs0LqOYUjlIu_jg&index=29">tıklayınız</a>.</p>
+<p align="justify">Another example about the conditional statements (from the course book): <b>stages_in_life.py</b> click on the <a href="https://www.youtube.com/watch?v=tOWbycYozGk&list=PLMoe16OQDeeCpsXqSpWs0LqOYUjlIu_jg&index=29">link</a> to watch the related video.</p>
 
-<p align="justify">(Stages of Life): Write an if-elif-else chain that determines a person’s stage of life. Get the user’s age by asking him/her a related question in the console and assign the entered value to age variable and then:</p>
+<p align="justify">(Stages of Life): Write an if-elif-else chain that determines a person's stage of life. Get the user's age by asking him/her a related question in the console and assign the entered value to <b>age</b> variable and then:</p>
 
 <ul>
 <li>If the person is less than 2 years old, print a message that the person is a baby.</li>
@@ -94,7 +94,7 @@ else:
 
 <h4>Bir Çemberin Çevresini ve Alanını Fonksiyon ile Bulma</h4>
 
-<p align="justify">Bugüne kadar Python listeleri ve NumPy dizileri üzerinde döngü ile dolaşarak bir takım işlemler yaptık. Bu işlemleri kodun içinde yeri geldiğinde gerçekledik. Artık kendi fonksiyonlarımızı kendimiz yazarak bu işlemleri otomatik hâle getireceğiz. Burada çemberin çevresini ve alanını hesapladığımız kodda kendi fonksiyonumuzu yazmayı görürken bir sonraki kod olan bir matrisi eşik değerden geçirerek binary hâle getirme meselesinde fonksiyonların niye bize gerektiğini tam mânâsıyla anlayacağız.</p>
+<p align="justify">Bugüne kadar Python listeleri ve NumPy dizileri üzerinde döngü ile dolaşarak bir takım işlemler yaptık. Artık kendi fonksiyonlarımızı kendimiz yazarak bu işlemleri otomatik hâle getireceğiz. Burada çemberin çevresini ve alanını hesapladığımız kodda kendi fonksiyonumuzu yazmayı görürken bir sonraki kod olan bir matrisi eşik değerden geçirerek iki değerli (binary) hâle getirme meselesinde fonksiyonların niye bize gerektiğini tam mânâsıyla anlayacağız.</p>
 
 <p align="justify">Aşağıda verilen <b>circle_perimeter_area.py</b> kodunda bir çemberin çevresini ve alanını hesaplamayı kodun içinde görürken <b>circle_perimeter_area_function.py</b> isimli kodda ise bu işlemi fonksiyonla yapmayı göreceğiz. İlgili video için <a href="https://www.youtube.com/watch?v=DovWv00Ctac&list=PLMoe16OQDeeCpsXqSpWs0LqOYUjlIu_jg&index=30">tıklayınız</a>.</p>
 
@@ -126,7 +126,7 @@ print(f"Yarıçapı {r} olan çemberin çevresi {p:.2f}, alanı {a:.2f}'dir.")
 
 <h4>Bir Matrisi Eşik Değerden Geçirerek Binary Hâle Getirmek</h4>
 
-<p align="justify">Elemanları [0-255] aralığında birer tamsayı olan 5x8'lik rasgele bir A matrisi üretiniz (numpy.random sınıfından transfer ettiğiniz randint fonksiyonu ile). Yine elemanları [0-255] aralığında birer tamsayı olan 5x8'lik rasgele bir B matrisi üretiniz (numpy.random sınıfından rand fonksiyonu ile). A ve B matrislerini veri tipi açısından hem type() fonksiyonuyla hem de numpy paketinden <b>dtype()</b> fonksiyonuyla analiz ediniz. Ardından girişi bir matris ile bir skaler (eşik değeri) olan (iki girişli), çıkışı ise binary bir matris olan (eğer giriş matrisinin elemanları eşik değerinden düşükse o zaman çıkış matrisinde tekabül eden eleman 0, aksi takdirde 255) <b>matrix_threshold()</b> isimli fonkiyon yazarak her iki matrisi de siyah-beyaz hale getiriniz (siyah 0 ile temsil edilirken beyaz 255 ile temsil edilmektedir).</a>
+<p align="justify">Elemanları [0-255] aralığında birer tamsayı olan 5x8'lik rasgele bir A matrisi üretiniz (numpy.random sınıfından transfer ettiğiniz randint fonksiyonu ile). Yine elemanları [0-255] aralığında birer tamsayı olan 5x8'lik rasgele bir B matrisi üretiniz (numpy.random sınıfından rand fonksiyonu ile). A ve B matrislerini veri tipi açısından hem <b>type()</b> fonksiyonuyla hem de numpy paketinden <b>dtype()</b> fonksiyonuyla analiz ediniz. Ardından girişi bir matris ile bir skaler (eşik değeri) olan (iki girişli), çıkışı ise binary bir matris olan (eğer giriş matrisinin elemanları eşik değerinden düşükse o zaman çıkış matrisinde tekabül eden eleman 0, aksi takdirde 255) <b>matrix_threshold()</b> isimli fonkiyon yazarak her iki matrisi de siyah-beyaz hale getiriniz (siyah 0 ile temsil edilirken beyaz 255 ile temsil edilmektedir).</a>
 
 <p align="justify">İlgili video için <a href="https://www.youtube.com/watch?v=lc80Qst1TGs&list=PLMoe16OQDeeCpsXqSpWs0LqOYUjlIu_jg&index=31">tıklayınız</a>.</a>
 
