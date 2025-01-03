@@ -1,25 +1,26 @@
-<h3>HAFTA 15: YAPAY ZEKÂ KÜTÜPHANELERİ (KERAS ve Scikit-Learn)</h3>
+<h3>FONKSİYONLAR - DEVAM</h3>
 
-<h4>ZAMAN SERİSİ ÖRNEĞİ</h4>
+<p align="justify">Bir matrisin minimum ve maksimum elemanlarını ve negatif ve pozitif eleman sayılarını bulan <b>matrix_stats()</b> isimli bir fonksiyon yazalım. Koddaki boşlukları doldurunuz.</p>
 
-<p align="justify">Burada makine öğrenmesi ve derin öğrenme problemlerinin ana iki konusu olan tahmin ve sınıflandırma problemlerinden tahmin etme (prediction) konusuna yönelik bir örnek yapacağız. Zaman serisi tahmini örneği için <a href="https://machinelearningmastery.com/time-series-prediction-lstm-recurrent-neural-networks-python-keras/?__s=jhvi07mlx13dt4gl0k7p&utm_source=drip&utm_medium=email&utm_campaign=MLM+Newsletter+December+20%2C+2024&utm_content=Deploy+Machine+Learning+Models+with+Streamlit+%E2%80%A2+7+Machine+Learning+Projects+For+Beginners">tıklayınız</a>.</p>
-
-<h5>Anaconda PowerShell ile Sanal Ortam Oluşturma</h5>
-
-<p align="justify"></p>
+<b>finding_matrix_statistics.py</b>
 
 ```
-conda create --name time-series
+from __________ import __________
+
+_____ matrix_stats(__________):
+    # Buraya fonksiyonu yazınız...
+
+# elemanları en az -10 en fazla 10 olabilen 4 satır 10 sütunluk rasgele matris üretelim
+_____, ______, ______, ______ = ____, ____, ____, ____
+A = __________(min, max, (row, col))
+mi, ma, ne, nn, nz, np = matrix_stats(A)
+search_for = 5
+n_search_for = (A == search_for).sum()
+print(f"Matris A\n{A}"); print(f"Minimum değer: {mi}")
+print(f"Maksimum değer: {ma}"); print(f"Toplam eleman sayısı: {ne}")
+print(f"Negatif eleman sayısı: {nn}")
+print(f"Sıfır sayısı: {nz}")
+print(f"Pozitif eleman sayısı: {np}")
+print(f"Matrisdeki {search_for} elemanı sayısı: {n_search_for}")
 ```
 
-```
-conda activate time-series
-```
-
-```
-conda install pip
-```
-
-```
-pip install -U scikit-learn
-```

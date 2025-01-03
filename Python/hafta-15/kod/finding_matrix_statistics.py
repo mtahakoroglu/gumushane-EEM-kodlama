@@ -9,7 +9,8 @@ def matrix_stats(matrix):
     np = (matrix > 0).sum() # matrisin pozitif eleman sayısı
     return mi, ma, ne, nn, nz, np
 
-A = randint(-10, 11, (4,10))
+min, max, row, col = -10, 10, 4, 10
+A = randint(min, max, (row, col))
 mi, ma, ne, nn, nz, np = matrix_stats(A)
 search_for = 5
 n_search_for = (A == search_for).sum()
