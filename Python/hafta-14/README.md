@@ -2,7 +2,7 @@
 
 <p align="justify">Geçtiğimiz hafta kendi fonksiyonlarımızı (user-defined function) yazmaya başladık. Bu hafta fonksiyonlar konusunda egzersizlerle devam ederken <b>matplotlib</b> paketi ile de grafik (histogram) çizdirmeyi göreceğiz. Veriyi görselleştirmek için <b>matplotlib</b> kullanırken tamamen <b>GitHub Copilot</b> kod yazma asistanından yardım alacağız.</p>
 
-<p align="justify">Burada örnek bir sınav sorusu çözelim. İlgili video için <a href="youtube.com">tıklayınız.</a>
+<p align="justify">Burada örnek bir sınav sorusu çözelim. İlgili video için <a href="https://www.youtube.com/watch?v=Nn9cd6eWTqw">tıklayınız.</a>
 
 <p align="justify">Aşağıda bir isim listesi verilmiştir.</p>
 
