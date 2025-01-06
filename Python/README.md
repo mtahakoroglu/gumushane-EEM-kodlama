@@ -18,3 +18,5 @@
 <a href="https://github.com/mtahakoroglu/gumushane-EEM-bilgisayar-programlama/tree/main/Python/hafta-14" target="_blank">Hafta 14: Fonsiyonlar devam (matplotlib ile grafik çizdirme)</a>
 
 <a href="https://github.com/mtahakoroglu/gumushane-EEM-bilgisayar-programlama/tree/main/Python/hafta-15" target="_blank">Hafta 15: Fonsiyonlar devam</a>
+
+<a href="https://github.com/mtahakoroglu/gumushane-EEM-bilgisayar-programlama/tree/main/Python/hafta-16" target="_blank">Hafta 16: Fonsiyonlar (örnek final sınavı sorusu))</a>
