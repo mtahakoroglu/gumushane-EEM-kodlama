@@ -37,4 +37,4 @@ Soru – devam (5 Puan) Grafik çizdirmede kullanacağımız <b>matplotlib</b> p
 # İsimleri başlangıç harfine göre sayıp alfabetik olarak bar grafiğinde gösterelim
 ```
 
-<img src="isim_listesi_histogram.png" alt="isim listesi histogram" width=500 height=auto>
+<img src="names_list_letter_count_histogram.png" alt="isim listesi harf sayısına göre histogram" width=500 height=auto>
