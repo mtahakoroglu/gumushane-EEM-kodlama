@@ -1,0 +1,6 @@
+<h3>EEM 114 ALGORİTMA TASARIMI ve PROGRAMLAMA DİLLERİ</h3>
+<p align="justify">Merhaba arkadaşlar. Python ile bilgisayar programlamaya hoşgeldiniz. Derste takip edilen kaynak <b>Buzdağı Kitapevi</b> tarafından Türkçe'ye çevirilmiş olan <a href="https://www.buzdagikitabevi.com/kapsamli-python-kursu-programlamaya-uygulamali-ve-proje-tabanli-giris" target="_blank"><b>Kapsamlı Python Kursu: Programlamaya Uygulamalı ve Proje Tabanlı Giriş</b></a> isimli kitaptır. Kitabın ayrıca <a href="https://buzdagiyayinevi.com/kapsamli-python-kursu-programlamaya-uygulamali-ve-proje-tabanli-giris/" target="_blank"><b>Buzdağı Yayınevi</b></a> sayfası da var. Oradan da temin edebilirsiniz.</p>
+
+<img src="https://buzdagiyayinevi.com/wp-content/uploads/2022/02/Python-Crash-Course-Kapak-scaled.jpg" target="_blank" alt="Kapsamlı Python Kursu: Programlamaya Uygulamalı ve Proje Tabanlı Giriş kitabı sayfası" width="200" height=auto>
+
+<a href="https://github.com/mtahakoroglu/gumushane-EEM-kodlama/tree/main/Python/hafta-01-02" target="_blank">Hafta 1: Python Kurulumu, Değişkenler ve Basit Veri Tipleri</a><br>
