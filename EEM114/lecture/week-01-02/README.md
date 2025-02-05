@@ -1,14 +1,15 @@
 <h3>GİRİŞ</h3>
-<p align="justify">Bu bölümde bilgisayarımıza Python resmi web sitesi olan <a href="https://python.org" target="_blank">https://python.org</a> adresinden Python yüklemeyi göreceğiz. Ayrıca PowerShell (PS) kullanımı ve Visual Studio Code (VS Code) yüklemeye de göz atacağız. Yüklemeler tamamlandıktan sonra <b>hello_world.py</b> isimli Python kodumuzu standart bir editörde yazıp PS'de koşturacağız. Ardından ders boyunca kullanacağımız Integrated Development Environment (IDE) olan VS Code'da kodumuzu koşturacağız. İlgili videoyu izlemek için <a href="https://www.youtube.com/watch?v=iYp09tfU0XQ&list=PLMoe16OQDeeCpsXqSpWs0LqOYUjlIu_jg&index=1">tıklayınız</a>.</p>
+<p align="justify">Bilgisayarımıza Python resmi web sitesi olan <a href="https://python.org" target="_blank">https://python.org</a> adresinden Python yükleyebiliriz. Ayrıca PowerShell (PS) kullanımı ve Visual Studio Code (VS Code) kullanmaya aşina olmalıyız. Python ve VS Code yüklemeleri tamamlandıktan sonra <b>hello_world.py</b> isimli Python kodumuzu standart bir editörde yazıp PS'de koşturacağız. Ardından ders boyunca kullanacağımız Integrated Development Environment (IDE) olan VS Code'da kodumuzu koşturacağız. Dersimizi yapacağımız Ümit Uzman Lab.'da Python ve VS Code yüklü oluyor. Kendi bilgisayarlarında kodlama yapacak olan arkadaşlarımızda kurulumları kendileri yapsınlar. Problemlerle karşılaşanlar bana sorabilirler.</p>
 
 <h3>DERSTE GITHUB KULLANIMI</h3>
+
 <p align="justify">Bilgisayarınızda git yüklü olmalı. İlk olarak PS açıp, bilgisayarınızda çalışacağınız dizine gidip orada</p>
 
 ```
-git clone https://github.com/mtahakoroglu/gumushane-EEM-bilgisayar-programlama.git
+git clone https://github.com/mtahakoroglu/gumushane-EEM-kodlama.git
 ```
 
-<p align="justify">komutunu koşturursanız o zaman bulunduğunuz dizine ders sayfamızdaki bilgiler ve kodlar indirilecektir (<a href="https://youtu.be/Lravk4sSAWI">GitHub clone videosunu izleyin</a>). İlerleyen haftalarda her zaman <b>clone</b> komutuyla sıfırdan indirme yapmayıp, dersin hocasının kod deposuna koyduğu yeni materyalleri <b>pull</b> komutuyla indirerek lokal <b>gumushane-EEM-bilgisayar-programlama</b> klasörünüzü güncelleyebiliriniz.</p>
+<p align="justify">komutunu koşturursanız o zaman bulunduğunuz dizine ders sayfamızdaki bilgiler ve kodlar indirilecektir. İlerleyen haftalarda her zaman <b>clone</b> komutuyla sıfırdan indirme yapmayıp, dersin hocasının kod deposuna koyduğu yeni materyalleri <b>pull</b> komutuyla indirerek lokal <b>gumushane-EEM-kodlama</b> klasörünüzü güncelleyebiliriniz.</p>
 
 <h3>İLK PYTHON KODUMUZ</h3>
 
