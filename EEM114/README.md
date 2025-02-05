@@ -3,4 +3,4 @@
 
 <img src="https://buzdagiyayinevi.com/wp-content/uploads/2022/02/Python-Crash-Course-Kapak-scaled.jpg" target="_blank" alt="Kapsamlı Python Kursu: Programlamaya Uygulamalı ve Proje Tabanlı Giriş kitabı sayfası" width="200" height=auto>
 
-<a href="https://github.com/mtahakoroglu/gumushane-EEM-kodlama/tree/main/Python/hafta-01-02" target="_blank">Hafta 1: Python Kurulumu, Değişkenler ve Basit Veri Tipleri</a><br>
+<a href="https://github.com/mtahakoroglu/gumushane-EEM-kodlama/tree/main/EEM114/lecture/hafta-01-02" target="_blank">Hafta 1: Python Kurulumu, Değişkenler ve Basit Veri Tipleri</a><br>
