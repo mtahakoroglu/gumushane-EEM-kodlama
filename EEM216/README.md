@@ -28,14 +28,14 @@ void setup() {
 
 void loop() {
   digitalWrite(LED_PIN, HIGH); // LED'i yak
-  delay(100);
+  delay(500); // LED'i 500ms=0.5s yak 
   digitalWrite(LED_PIN, LOW); // LED'i yak
-  delay(1900);
+  delay(500); // LED'i 500ms=0.5s söndür
 }
 ```
 
 <h3>LED FLAŞÖR (LED FLASHER)</h3>
-<p align="justify">Bu deneyde Arduino’nun dijital portundan sekiz pin kullanacağız. Bu pinlerin hepsi yine bir önceki deneyde olduğı  gibi çıkış (OUTPUT) olacak şekilde ayarlanmalı. Burada {2, 3, 4, 5, 6, 7, 8, 9} numaralı dijital pinleri seçelim. Devre bağlantı şeması ve kodunu aşağıda görebilirsiniz. Deneyin koşan hâlinin videosu için <a href="https://www.youtube.com/shorts/Gr9vosLasYI">tıklayınız</a>.</p>
+<p align="justify">Bu deneyde Arduino’nun dijital portundan sekiz pin kullanacağız. Bu pinlerin hepsi yine bir önceki deneyde olduğu gibi <b>setup()</b> fonksiyonu içinde çıkış (OUTPUT) olacak şekilde ayarlanmalı. Burada {2, 3, 4, 5, 6, 7, 8, 9} numaralı dijital pinleri seçelim. Devre bağlantı şeması ve kodunu aşağıda görebilirsiniz. Deneyin gerçeklenmiş hâlini izlemek için <a href="https://www.youtube.com/shorts/Gr9vosLasYI">tıklayınız</a>.</p>
 
 <img src="image/leds_flasher.jpg" alt="leds flasher circuit" width="400" height=auto>
 
@@ -45,28 +45,27 @@ void loop() {
 // Pinler D2'den D9'a kadar olan pinler olarak atanıyor
 int ledPins[] = {2, 3, 4, 5, 6, 7, 8, 9};  // 8 LED için pinler
 int numLeds = 8;  // LED sayısı
-int delayTime = 100; // ms
+int f = 2; // frekans - saniyede kaç kere tur atsın
+int delayTime = (1000/f)/(2*numLeds-2); // ms
 
 void setup() {
   // LED pinlerini çıkış olarak ayarlıyoruz
-  for (int i=0; i<numLeds; i++) {
+  for (int i=0; i<numLeds; i++)
     pinMode(ledPins[i], OUTPUT);
-  }
 }
 
 void loop() {
   // LED'leri D2'den D9'a doğru yak
   for (int i=0; i<numLeds; i++) {
-    digitalWrite(ledPins[i], HIGH);  // LED'i yak
+    digitalWrite(ledPins[i], HIGH); // LED'i yak
     delay(delayTime);
-    digitalWrite(ledPins[i], LOW);   // LED'i söndür
+    digitalWrite(ledPins[i], LOW); // LED'i söndür
   }
-
   // LED'leri D9'dan D2'ye doğru yak (D9 ve D2 dâhil değil)
   for (int i=numLeds-2; i>0; i--) { // numLeds-2 çünkü D9 tekrar yanmamalı
-    digitalWrite(ledPins[i], HIGH);  // LED'i yak
+    digitalWrite(ledPins[i], HIGH); // LED'i yak
     delay(delayTime);
-    digitalWrite(ledPins[i], LOW);   // LED'i söndür
+    digitalWrite(ledPins[i], LOW); // öbür LED'e geçmeden LED'i söndür
   }
 }
 ```
