@@ -8,7 +8,7 @@ hobi projelerinde (do it yourself - DIY) en çok tercih edilen mikrodenetleyicil
 Kullanım kolaylığıyla teknik bilgisi olmayan kullanıcıları (e.g., sanatçılar) bile kendisine çekmeyi başaran Arduino, son zamanlarda yüksek işlem hızlarından 
 dolayı 32-bitlik çipler (e.g., STM32) piyasaya sürülmesine rağmen hâlen birçok uygulamada kullanılmaktadır. En yaygın ve popüler Arduino modelleri olan Uno, Nano ve Pro-Mini’yi aşağıda görebilirsiniz.</p>
 
-<img src="component/arduino-uno-nano-pro-mini.jpg" alt="Arduino Uno, Nano and Pro-Mini" width="500" height=auto>
+<img src="photo/arduino-uno-nano-pro-mini.jpg" alt="Arduino Uno, Nano and Pro-Mini" width="500" height=auto>
 
 <p align="justify">Arduino’lar sensörlerden veri okumayı, bu verilerden alakalı değerleri hesaplamayı, ve bu parametreleri/değişkenleri görselleştirmeyi veya eyleyicileri sürecek sinyallere dönüştürüp (i.e., kapalı bir çevrim tasarlayıp) geri-beslemeli bir kontrol sistemi (e.g., robot) gerçeklemeyi muazzam kullanıcı desteğine ve profesyonel dökümantasyonuna sahip yüksek seviyeli C++ API’si sayesinde inanılmaz kolaylaştırarak insanlığın gelişimine büyük katkıda bulunmuşlardır. Kendilerinden sonra gelen single board computer olarak geçen tek kartlı bilgisayarlar (e.g., Raspberry Pi, NVidia Jetson Nano) her ne kadar kullanım alanları daha çok bilgisayarlı görü (computer vision - CV), makine öğrenmesi (machine learning - ML) ve derin öğrenme (deep learning - DL) uygulamaları olsa da Arduino’ları tahtından edememiştir. Artık Arduino’lar da TinyML sayesinde sınırlı işlem gücüne sahip de olsa yapay zekâ (artificial intelligence - AI) uygulamaları koşturabilmektedir.</p>
 
