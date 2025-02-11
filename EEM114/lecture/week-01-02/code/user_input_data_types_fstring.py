@@ -1,6 +1,6 @@
-name = input("Kişinin ismi ne? ")
-age = int(input(f"{name} isimli kişinin yaşı kaç? "))
-weight = float(input(f"{name} isimli kişi kaç kg? "))
+name = input("İsminiz nedir? ")
+age = int(input(f"Yaşın kaç {name}? "))
+weight = float(input(f"Kaç kilosun {name}? "))
 x, year, chernobylYear = 5, 2024, 1986
 birthYear = year - age
 print(f"{name} {birthYear} senesinde doğmuştur.")

@@ -1,3 +1,79 @@
+<h2>ARDUİNO'LAR HAKKINDA GENEL BİLGİ</h2>
+
+<p align="justify">Mühendislik çeşitli alt disiplinlerden (e.g., bilgisayar mühendisliği, elektrik-elektronik mühendisliği, makine mühendisliği, vb.) 
+oluşsa da mühendisler olarak bugün pratik bir proje yaptığımızda multidisipliner olarak çalışmak zorundayız. Sadece elektrik-elektronik mühendisliğinde 
+değil neredeyse bütün alanlarda (hatta bazen sosyolojik meselelerde bile) ölçüm cihazı ve sensörler işin içerisine girdiğinde, yapılan hesaplamalarda
+bir beyin vazifesi gören hafif, küçük ve ucuz çipler olan mikrodenetleyicilere (microcontroller) ihtiyaç duyulmakta. Son on beş senede dünyada özellikle 
+hobi projelerinde (do it yourself - DIY) en çok tercih edilen mikrodenetleyiciler Atmel şirketinin üretmiş olduğu 8-bit ATmega328 çipli Arduino’lardır. 
+Kullanım kolaylığıyla teknik bilgisi olmayan kullanıcıları (e.g., sanatçılar) bile kendisine çekmeyi başaran Arduino, son zamanlarda yüksek işlem hızlarından 
+dolayı 32-bitlik çipler (e.g., STM32) piyasaya sürülmesine rağmen hâlen birçok uygulamada kullanılmaktadır. En yaygın ve popüler Arduino modelleri olan Uno, Nano ve Pro-Mini’yi aşağıda görebilirsiniz.</p>
+
+<img src="component/arduino-uno-nano-pro-mini.jpg" alt="Arduino Uno, Nano and Pro-Mini" width="500" height=auto>
+
+<p align="justify">Arduino’lar sensörlerden veri okumayı, bu verilerden alakalı değerleri hesaplamayı, ve bu parametreleri/değişkenleri görselleştirmeyi veya eyleyicileri sürecek sinyallere dönüştürüp (i.e., kapalı bir çevrim tasarlayıp) geri-beslemeli bir kontrol sistemi (e.g., robot) gerçeklemeyi muazzam kullanıcı desteğine ve profesyonel dökümantasyonuna sahip yüksek seviyeli C++ API’si sayesinde inanılmaz kolaylaştırarak insanlığın gelişimine büyük katkıda bulunmuşlardır. Kendilerinden sonra gelen single board computer olarak geçen tek kartlı bilgisayarlar (e.g., Raspberry Pi, NVidia Jetson Nano) her ne kadar kullanım alanları daha çok bilgisayarlı görü (computer vision - CV), makine öğrenmesi (machine learning - ML) ve derin öğrenme (deep learning - DL) uygulamaları olsa da Arduino’ları tahtından edememiştir. Artık Arduino’lar da TinyML sayesinde sınırlı işlem gücüne sahip de olsa yapay zekâ (artificial intelligence - AI) uygulamaları koşturabilmektedir.</p>
+
+<h3>LED YAKMA (LED FLASH)</h3>
+<p align="justify">Bu deneyde Arduino’nun dijital portunu kullanacağız. Dijital port 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13 olarak numaralandırılmış. İlk iki pin olan D0 ve D1 pinlerinin üzerinde <b>Rx</b> ve <b>Tx</b> yazdığından genelde dijital port kullanan uygulamalar ilk iki pini kullanmazlar. Bu çalışmada tek bir LED yakacağımızdan dolayı keyfi olarak <b>D8</b> bacağını çıkış (OUTPUT) olarak seçelim. İkili (binary) sistemde dijital çıkış logic 0 veya logic 1 olacak. Arduino ekosistemi buna <b>HIGH</b> ve <b>LOW</b> demekte. Devre bağlantı şeması ve kodunu aşağıda görebilirsiniz.</p>
+
+<img src="image/led_flash.jpg" alt="led flash circuit" width="400" height=auto>
+
+<b>led_flash.ino</b>
+
+```
+#define LED_PIN 8
+
+void setup() {
+  pinMode(LED_PIN, OUTPUT);
+}
+
+void loop() {
+  digitalWrite(LED_PIN, HIGH); // LED'i yak
+  delay(100);
+  digitalWrite(LED_PIN, LOW); // LED'i yak
+  delay(1900);
+}
+```
+
+<h3>LED FLAŞÖR (LED FLASHER)</h3>
+<p align="justify">Bu deneyde Arduino’nun dijital portundan sekiz pin kullanacağız. Bu pinlerin hepsi yine bir önceki deneyde olduğı  gibi çıkış (OUTPUT) olacak şekilde ayarlanmalı. Burada {2, 3, 4, 5, 6, 7, 8, 9} numaralı dijital pinleri seçelim. Devre bağlantı şeması ve kodunu aşağıda görebilirsiniz. Deneyin koşan hâlinin videosu için <a href="https://www.youtube.com/shorts/Gr9vosLasYI">tıklayınız</a>.</p>
+
+<img src="image/leds_flasher.jpg" alt="leds flasher circuit" width="400" height=auto>
+
+<b>leds_flasher.ino</b>
+
+```
+// Pinler D2'den D9'a kadar olan pinler olarak atanıyor
+int ledPins[] = {2, 3, 4, 5, 6, 7, 8, 9};  // 8 LED için pinler
+int numLeds = 8;  // LED sayısı
+int delayTime = 100; // ms
+
+void setup() {
+  // LED pinlerini çıkış olarak ayarlıyoruz
+  for (int i=0; i<numLeds; i++) {
+    pinMode(ledPins[i], OUTPUT);
+  }
+}
+
+void loop() {
+  // LED'leri D2'den D9'a doğru yak
+  for (int i=0; i<numLeds; i++) {
+    digitalWrite(ledPins[i], HIGH);  // LED'i yak
+    delay(delayTime);
+    digitalWrite(ledPins[i], LOW);   // LED'i söndür
+  }
+
+  // LED'leri D9'dan D2'ye doğru yak (D9 ve D2 dâhil değil)
+  for (int i=numLeds-2; i>0; i--) { // numLeds-2 çünkü D9 tekrar yanmamalı
+    digitalWrite(ledPins[i], HIGH);  // LED'i yak
+    delay(delayTime);
+    digitalWrite(ledPins[i], LOW);   // LED'i söndür
+  }
+}
+```
+
+<h3>İkili sistem sayıcı (dijital pinleri çıkış olarak kullanma)</h3>
+<h3>Binary Counter (using digital pins as output)</h3>
+
 <h3>İkili sistem sayıcı (dijital pinleri çıkış olarak kullanma)</h3>
 <h3>Binary Counter (using digital pins as output)</h3>
 
