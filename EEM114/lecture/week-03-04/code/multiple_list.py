@@ -1,10 +1,10 @@
-names = ["Önder", "Furkan", "Sefa", "Safa", "Patrick", "Mahmoud", "Cindy"]
-ages = [20, 21, 21, 20, 23, 25, 24]
-weight = [73.6, 75.2, 64.1, 67.9, 71.1, 68.1, 50.3]
-attendance = [True, True, True, True, False, True, True]
-# for döngüsü ile listedeki öğrencilerin isimlerini, yaşlarını, kilolarını ve devamsızlık durumlarını ekrana yazdıralım
+names = ["Arhan", "Mustafa", "Abdullah", "Jesuno", "Bonaventura", "Abdulrahim", "Ziya"]
+ages = [21, 21, 20, 19, 22, 21, 19]
+weight = [91.1, 64.2, 85.3, 79.6, 80.4, 65.7, 69.4]
+attendance = [True, True, True, False, True, False, True]
+# sınıfta yer alan kişilerin bilgilerini mânâlı bir cümle ile konsola yazdıralım
 for i in range(len(names)):
     if attendance[i]:
-        print(f"{names[i]} {ages[i]} yaşında olup {weight[i]} kg ağırlığındadır.")
+        print(f"{names[i]}, {ages[i]} yaşında, {weight[i]}kg ağırlığında birisidir.")
     else:
-        print(f"{names[i]} bugün sınıfta yoktur.")
+        print(f"{names[i]} bugün derste yoktur.")
