@@ -2,9 +2,9 @@ names = ["Arhan", "Mustafa", "Abdullah", "Jesuno", "Bonaventura", "Abdulrahim", 
 ages = [21, 21, 20, 19, 22, 21, 19]
 weight = [91.1, 64.2, 85.3, 79.6, 80.4, 65.7, 69.4]
 attendance = [True, True, True, False, True, False, True]
-# sınıfta yer alan kişilerin bilgilerini mânâlı bir cümle ile konsola yazdıralım
-for i in range(len(names)):
+# bir döngü ile listedeki elemanlardan mânâlı cümle oluşturalım ve ekrana basalım
+for i in range(len(names)): # listeleri i indeksi ile dolaşıyoruz
     if attendance[i]:
-        print(f"{names[i]}, {ages[i]} yaşında, {weight[i]}kg ağırlığında birisidir.")
+        print(f"{names[i]}, {ages[i]} yaşında, {weight[i]}kg ağırlığında bir öğrencidir.")
     else:
-        print(f"{names[i]} bugün derste yoktur.")
+        print(f"{names[i]} bugün derse gelmedi.")

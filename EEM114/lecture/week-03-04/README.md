@@ -31,7 +31,7 @@ for name in names:
 
 <h5>FOR DÖNGÜSÜ ile LİSTE ELEMANLARINI F-STRING KULLANARAK EKRANA YAZIRMAK</h5>
 
-<p> Bu kısımda birden fazla basit liste tanımlıyoruz. Bu listelerin index'leri aynı olan elemanlarını uygun bir f-string ile mânâlı bir cümle oluşturacak şekilde ekrana yazdırmak için bir <b>for</b> döngüsü kullanıyoruz. Döngüleri henüz öğrenmediğimizden dolayı <b>GitHub Co-Pilot</b>'dan yardım aldık. İlgili video için <a href="https://www.youtube.com/watch?v=KnJXExjCgqE" target="_blank">tıklayınız</a>. Kodun üzerindeki yorumlardan da kodu anlayabilirsiniz.</p>
+<p> Bu kısımda birden fazla basit liste tanımlıyoruz. Bu listelerin index'leri aynı olan elemanlarını uygun bir f-string ile mânâlı bir cümle oluşturacak şekilde ekrana yazdırmak için bir <b>for</b> döngüsü kullanıyoruz. Döngüleri henüz öğrenmediğimizden dolayı <b>GitHub Co-Pilot</b>'dan yardım aldık. İlgili video için <a href="https://www.youtube.com/watch?v=xI4zx4jV97E" target="_blank">tıklayınız</a>. Kodun üzerindeki yorumlardan da kodu anlayabilirsiniz.</p>
 
 <b>multiple_list.py</b>
 
@@ -40,12 +40,12 @@ names = ["Arhan", "Mustafa", "Abdullah", "Jesuno", "Bonaventura", "Abdulrahim", 
 ages = [21, 21, 20, 19, 22, 21, 19]
 weight = [91.1, 64.2, 85.3, 79.6, 80.4, 65.7, 69.4]
 attendance = [True, True, True, False, True, False, True]
-# sınıfta yer alan kişilerin bilgilerini mânâlı bir cümle ile konsola yazdıralım
-for i in range(len(names)):
+# bir döngü ile listedeki elemanlardan mânâlı cümle oluşturalım ve ekrana basalım
+for i in range(len(names)): # listeleri i indeksi ile dolaşıyoruz
     if attendance[i]:
-        print(f"{names[i]}, {ages[i]} yaşında, {weight[i]}kg ağırlığında birisidir.")
+        print(f"{names[i]}, {ages[i]} yaşında, {weight[i]}kg ağırlığında bir öğrencidir.")
     else:
-        print(f"{names[i]} bugün derste yoktur.")
+        print(f"{names[i]} bugün derse gelmedi.")
 ```
 
 <h4>BİR LİSTENİN ALT LİSTELERİNE SLICING ile (INDEX'ler KULLANARAK) ERİŞİM</h4>
