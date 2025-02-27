@@ -50,7 +50,7 @@ for i in range(len(names)): # listeleri i indeksi ile dolaşıyoruz
 
 <h4>BİR LİSTENİN ALT LİSTELERİNE SLICING ile (INDEX'ler KULLANARAK) ERİŞİM</h4>
 
-<p align="justify">Bu kodda <b>names</b> isimli ana listeden <b>INDEX</b> değerlerini kullanarak değişik alt listeleri ve bazı durumlarda bu listelerin kombinasyonlarını kesiyoruz (<b>SLICING</b>). İlgili videoyu izlemek için <a href="https://youtu.be/hDPR_cEmaoM" target="_blank">tıklayınız</a>.</p>
+<p align="justify">Bu kodda <b>names</b> isimli ana listeden <b>INDEX</b> değerlerini kullanarak değişik alt listeleri kesiyoruz (<b>SLICING</b>). İlgili videoyu izlemek için <a href="https://www.youtube.com/watch?v=2qBpemP8zuw" target="_blank">tıklayınız</a>.</p>
 
 <b>list_slicing.py</b>
 
@@ -58,26 +58,41 @@ for i in range(len(names)): # listeleri i indeksi ile dolaşıyoruz
 names = ["Arhan", "Mustafa", "Abdullah", "Jesuno", 
          "Bonaventura", "Abdulrahim", "Ziya", "Umut",
          "Eray", "İbo"]
-print(f"İlk üç kişi names[0:3] = {names[0:3]}")
-print(f"İlk üç kişi names[:3] = {names[:3]}")
-print(f"names[4:7] = {names[4:7]}")
-print(f"Son dört öğrenci: names[-4:] = {names[-4:]}")
+print(f"names = {names}")
+print(f"İlk üç öğrenci: names[0:3] = {names[0:3]}")
+print(f"İlk üç öğrenci: names[:3] = {names[:3]}")
+print(f"names[-5:-2] = {names[-5:-2]}")
+print(f"Son üç öğrenci: names[-3:] = {names[-3:]}")
 ```
 
 <h4>LİSTE METOTLARINA GİRİŞ</h4>
 
-<p align="justify">Listelere ait <b>title()</b>, <b>upper()</b> ve <b>lower()</b> isimli metotlara bakalım. İlgili videoyu izlemek için <a href="https://youtu.be/z_o6j1uvPYU" target="_blank">tıklayınız</a>.</p>
+<p align="justify">Listelere ait <b>title()</b>, <b>upper()</b> ve <b>lower()</b> isimli metotlara bakalım. Kitapta <b>rstrip()</b>, <b>lstrip()</b> ve <b>strip()</b> mettoları da geçiyor. İlgili videoyu izlemek için <a href="https://youtu.be/z_o6j1uvPYU" target="_blank">tıklayınız</a>.</p>
+
+<b>list_methods.py</b>
 
 ```
-names = ["Arhan", "mustafa", "abdullah", "JESUNO", 
-         "bonaventurA", "abdulrahim", "ziya", "Umut",
+names = ["Arhan", "mustafa", "aBdULLah", "JESUNO", 
+         "bonaventurA", "AbdulRahim", "ziYA", "Umut",
          "eray", "ibo"]
+print(names)
+# liste metotları kullarak isimleri değişik formlarda ekrana basalım
+print("İlk harfler büyük diğerleri küçük")
 for name in names:
-    print(name.title())
-for x in names:
-    print(x.upper())
+    print(name.title(), end=" ")
+print("\nİsimlerdeki harflerin tamamı büyük") # \n bir alt satıra geçer
 for name in names:
-    print(name.lower())
+    print(name.upper(), end=" ")
+print("\nİsimlerdeki harflerin tamamı küçük")
+for name in names:
+    print(name.lower(), end=" ")
+# kitapta rstrip(), lstrip(), strip() metotları da kullanılmış
+name = "     Arhan"
+print(f"\nname = {name}    name.lstrip() = {name.lstrip()}")
+name = "Arhan     "
+print(f"name = {name}    name.rstrip() = {name.rstrip()}")
+name = "    Arhan    "
+print(f"name = {name}    name.strip() = {name.strip()}")
 ```
 
 <h4>DİNAMİK LİSTE OLUŞTURMA</h4>

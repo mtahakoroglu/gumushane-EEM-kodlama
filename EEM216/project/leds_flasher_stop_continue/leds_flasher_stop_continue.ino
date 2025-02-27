@@ -1,6 +1,6 @@
-const int ledPins[] = {3, 4, 5, 6, 7, 8, 9, 10};
-const int numLeds = 8;
-const int buttonPin = 2;
+const int ledPins[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13};
+const int numLeds = 13;
+const int buttonPin = 0;
 
 int currentLed = 0; // Su anki LED konumu
 int direction = 1; // 1: ileri, -1: geri
@@ -9,7 +9,7 @@ int buttonState; // Mevcut buton durumu
 int lastButtonState = HIGH; 
 unsigned long lastDebounceTime = 0;  
 const unsigned long debounceDelay = 50;  
-int f = 4; 
+int f = 2; 
 unsigned long delayTime = (1000 / f) / (2 * numLeds - 2); 
 unsigned long previousMillis = 0;  
 
