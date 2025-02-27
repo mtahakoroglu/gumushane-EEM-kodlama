@@ -67,7 +67,7 @@ print(f"Son üç öğrenci: names[-3:] = {names[-3:]}")
 
 <h4>LİSTE METOTLARINA GİRİŞ</h4>
 
-<p align="justify">Listelere ait <b>title()</b>, <b>upper()</b> ve <b>lower()</b> isimli metotlara bakalım. Kitapta <b>rstrip()</b>, <b>lstrip()</b> ve <b>strip()</b> mettoları da geçiyor. İlgili videoyu izlemek için <a href="https://youtu.be/z_o6j1uvPYU" target="_blank">tıklayınız</a>.</p>
+<p align="justify">Listelere ait <b>title()</b>, <b>upper()</b> ve <b>lower()</b> isimli metotlara bakalım. Kitapta <b>rstrip()</b>, <b>lstrip()</b> ve <b>strip()</b> metotları da geçiyor. İlgili videoyu izlemek için <a href="https://www.youtube.com/watch?v=4zvQm1Sgw30" target="_blank">tıklayınız</a>.</p>
 
 <b>list_methods.py</b>
 
@@ -97,26 +97,24 @@ print(f"name = {name}    name.strip() = {name.strip()}")
 
 <h4>DİNAMİK LİSTE OLUŞTURMA</h4>
 
-<p align="justify">Listelere ait <b>append()</b> isimli metot ile kullanıcı tarafından girişi yapılan liste elemanlarını sıra sıra listeye kaydedelim ve en sonunda hem <b>len()</b> komutuyla hem de kendi sayıcımızla listenin uzunluğunu hesaplayarak liste ile ekrana basalım. İlgili videoyu izlemek için <a href="https://youtu.be/z_o6j1uvPYU" target="_blank">tıklayınız</a>.</p>
+<p align="justify">Listelere ait <b>append()</b> isimli metot ile kullanıcı tarafından girişi yapılan liste elemanlarını sıra sıra listeye kaydedelim ve en sonunda hem <b>len()</b> komutuyla hem de kendi sayıcımızla listenin uzunluğunu hesaplayarak liste ile ekrana basalım. İlgili videoyu izlemek için <a href="https://www.youtube.com/watch?v=1XrcrU7gW20" target="_blank">tıklayınız</a>.</p>
 
-<b>user_input_dynamic_list.py</b>
+<b>user_input_append_list.py</b>
 
 ```
-names = []
-
-k = 0 # listeye eklenen isimleri kendimiz sayalım
-while True:
-    s = int(input("İsim eklemek için 1'e, programı sonlandırmak için 2'a basınız: "))
-    if s == 1:
-        names.append(input("İsim giriniz: "))
-        k += 1 # k = k+1
-    elif s == 2:
-        print("Program sonlandırıldı.")
+names = [] # boş bir liste
+k = 0 # listedeki isim sayısını bir indeks ile kendimiz hesaplayalım
+while True: # sonsuz döngü
+    secim = int(input("İsim eklemek için 1'e, programı sonlandırmak için 2'ye basınız: "))
+    if secim == 1:
+        name = input("İsim giriniz: ")
+        names.append(name)
+        k += 1
+    elif secim == 2:
         break
     else:
-        print("Hatalı giriş yaptınız! Lütfen tekrar deneyiniz.")
-
-print(f"names = {names}") # isimler listesi
-print(f"names isimli listenin uzunluğu: {len(names)}") # isimler listesinin uzunluğu
-print(f"names isimli listenin kendi sayımımıza göre uzunluğu: {k}") # isimler listesinin uzunluğu
+        print("Hatalı giriş yaptınız!")
+print(f"İsim listesi = {names}")
+print(f"Listede toplam {k} isim var.")
+print(f"Listedeki isim sayısı {len(names)}.")
 ```
