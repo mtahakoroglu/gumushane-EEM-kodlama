@@ -29,35 +29,34 @@ for name in names:
 
 <p align="justify">Yukarıda ismi <b>names</b> olan elemanlarının veri tipi (data type) <b>string</b> olan bir liste tanımlamıştık. Burada o listeye eşlik eden üç ayrı liste daha tanımlayacağız.</p>
 
-<h5>FOR DÖNGÜSÜ ile LİSTE ELEMANLARINI F-STRING KULLANARAK EKRANA YAZIRMAK</h5>
+<h5>FOR DÖNGÜSÜ ile LİSTE ELEMANLARINI F-STRING KULLANARAK EKRANA YAZDIRMAK</h5>
 
-<p> Bu kısımda birden fazla basit liste tanımlıyoruz. Bu listelerin index'leri aynı olan elemanlarını uygun bir f-string ile mânâlı bir cümle oluşturacak şekilde ekrana yazdırmak için bir <b>for</b> döngüsü kullanıyoruz. Döngüleri henüz öğrenmediğimizden dolayı <b>GitHub Co-Pilot</b>'dan yardım aldık. İlgili video için <a href="https://www.youtube.com/watch?v=xI4zx4jV97E" target="_blank">tıklayınız</a>. Kodun üzerindeki yorumlardan da kodu anlayabilirsiniz.</p>
+<p> Bu kısımda birden fazla basit liste tanımlıyoruz. Bu listelerin indeksleri aynı olan elemanlarını uygun bir <b>f-string</b> yapısı içerisinde mânâlı bir cümle oluşturacak şekilde ekrana yazdırmak için bir <b>for</b> döngüsü kullanıyoruz. Döngüleri henüz öğrenmediğimizden dolayı <b>GitHub Co-Pilot</b>'dan yardım aldık. İlgili video için <a href="https://www.youtube.com/watch?v=xI4zx4jV97E" target="_blank">tıklayınız</a>. Kodun üzerindeki yorumlardan da kodu anlayabilirsiniz.</p>
 
 <b>multiple_list.py</b>
 
 ```
 names = ["Arhan", "Mustafa", "Abdullah", "Jesuno", "Bonaventura", "Abdulrahim", "Ziya"]
-ages = [21, 21, 20, 19, 22, 21, 19]
-weight = [91.1, 64.2, 85.3, 79.6, 80.4, 65.7, 69.4]
-attendance = [True, True, True, False, True, False, True]
+ages = [21, 21, 20, 19, 22, 21, 19] # yaş
+weight = [91.1, 64.2, 85.3, 79.6, 80.4, 65.7, 69.4] # ağırlık
+attendance = [True, True, True, False, True, False, True] # yoklama
 # bir döngü ile listedeki elemanlardan mânâlı cümle oluşturalım ve ekrana basalım
 for i in range(len(names)): # listeleri i indeksi ile dolaşıyoruz
-    if attendance[i]:
+    if attendance[i]: # attendance[i] True ise cümleyi oluştur
         print(f"{names[i]}, {ages[i]} yaşında, {weight[i]}kg ağırlığında bir öğrencidir.")
-    else:
+    else: # attendance[i] False ise cümleyi oluşturma
         print(f"{names[i]} bugün derse gelmedi.")
 ```
 
 <h4>BİR LİSTENİN ALT LİSTELERİNE SLICING ile (INDEX'ler KULLANARAK) ERİŞİM</h4>
 
-<p align="justify">Bu kodda <b>names</b> isimli ana listeden <b>INDEX</b> değerlerini kullanarak değişik alt listeleri kesiyoruz (<b>SLICING</b>). İlgili videoyu izlemek için <a href="https://www.youtube.com/watch?v=2qBpemP8zuw" target="_blank">tıklayınız</a>.</p>
+<p align="justify">Bu kodda <b>names</b> isimli listeden <b>indeks</b> değerlerini kullanarak değişik alt listeleri kesiyoruz (<b>SLICING</b>). İlgili videoyu izlemek için <a href="https://www.youtube.com/watch?v=2qBpemP8zuw" target="_blank">tıklayınız</a>.</p>
 
 <b>list_slicing.py</b>
 
 ```
-names = ["Arhan", "Mustafa", "Abdullah", "Jesuno", 
-         "Bonaventura", "Abdulrahim", "Ziya", "Umut",
-         "Eray", "İbo"]
+names = ["Arhan", "Mustafa", "Abdullah", "Jesuno", "Bonaventura", 
+        "Abdulrahim", "Ziya", "Umut", "Eray", "Halil İbrahim"]
 print(f"names = {names}")
 print(f"İlk üç öğrenci: names[0:3] = {names[0:3]}")
 print(f"İlk üç öğrenci: names[:3] = {names[:3]}")
