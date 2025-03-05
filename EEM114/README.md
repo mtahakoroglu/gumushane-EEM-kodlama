@@ -6,3 +6,5 @@
 <a href="https://github.com/mtahakoroglu/gumushane-EEM-kodlama/tree/main/EEM114/lecture/week-01-02" target="_blank">Hafta 1-2: Python Kurulumu, Değişkenler ve Basit Veri Tipleri</a><br>
 
 <a href="https://github.com/mtahakoroglu/gumushane-EEM-kodlama/tree/main/EEM114/lecture/week-03-04" target="_blank">Hafta 3-4: Listelere Giriş</a><br>
+
+<a href="https://github.com/mtahakoroglu/gumushane-EEM-kodlama/tree/main/EEM114/lecture/week-05" target="_blank">Hafta 5: Listelerle Çalışma</a><br>
