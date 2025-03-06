@@ -80,3 +80,29 @@ print(f"names = {names}")
 names.pop(2)
 print(f"names = {names}")
 ```
+
+<h4>LİSTEDEN ÇIKARDIĞIMIZ ELEMANLARLA YENİ BİR LİSTE OLUŞTURMAK</h4>
+
+<p align="justify">Elimizdeki bir isim listesinin elemanlarını bir döngü ile dolaşarak harf sayısı altı veya daha fazla olan isimleri listeden çıkaralım. Yalnız çıkardığımız bu isimleri <b><i>remove()</i></b> metodu gibi <b>void</b> fonksiyonlarla (yâni geri bir değişken döndürmeyen fonksiyon) değil de <b><i>pop()</i></b> fonksiyonuyla yâni bize çıkardığımız ismi geri döndüren metotla yapalım. Döngüde çıkardığımız isimleri çıkarır çıkarmaz yeni bir listeye <b><i>append()</i></b> metoduyla ekliyor olacağız. <b>Not:</b> Kodu ilk önce <b>for</b> döngüsüyle yazmaya çalıştık ama karşılaştığımız <b>index</b> probleminden sonra <b>while</b> döngüsüne geçip <b>index</b> değerini kendimiz kontrol ederek problemin üstesinden geldik. İlgili videoyu izlemek için <a href="https://youtu.be/a7l9s5jUvRY?si=h9IZaOI5cfuEiQ4N">tıklayınız</a>.</p>
+
+<b>making_new_list_from_list.py</b>
+
+```
+names = ['Willy', 'Arhan', 'Mustafa', 'Abdullah', 'Jesuno', 'Bonaventura', 
+         'Manuel', 'Abdulrahim', 'Ziya', 'Rukiye', 'Taha', "İbrahim"]
+print(f"Listenin ilk hâli = {names}")
+print(f"İsimler listesinde {len(names)} eleman vardır.")
+# isim listesinde harf sayısı 6 ve daha fazla olan isimleri 
+# listeden atmak istiyorum ama attiğim isimleri yeni bir listede
+# tutmak istiyorum ve bunu pop() metodu ile yapmak istiyorum
+exported_names, k = [], 0
+while k < len(names):
+    if len(names[k]) >= 6:
+        exported_names.append(names.pop(k))
+    else:
+        k += 1
+print(f"Listenin son hâli = {names}")
+print(f"İsimler listesinin son hâlinde {len(names)} eleman vardır.")
+print(f"Çıkarılan isimler = {exported_names}")
+print(f"Çıkarılanlar listesinde {len(exported_names)} eleman vardır.")
+```
