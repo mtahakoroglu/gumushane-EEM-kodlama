@@ -7,4 +7,6 @@
 
 <a href="https://github.com/mtahakoroglu/gumushane-EEM-kodlama/tree/main/EEM114/lecture/week-03-04" target="_blank">Hafta 3-4: Listelere Giriş</a><br>
 
-<a href="https://github.com/mtahakoroglu/gumushane-EEM-kodlama/tree/main/EEM114/lecture/week-05" target="_blank">Hafta 5: Listelerle Çalışma</a><br>
+<a href="https://github.com/mtahakoroglu/gumushane-EEM-kodlama/tree/main/EEM114/lecture/week-05-06" target="_blank">Hafta 5-6: Listelerle Çalışma</a><br>
+
+<a href="https://github.com/mtahakoroglu/gumushane-EEM-kodlama/tree/main/EEM114/lecture/week-07" target="_blank">Hafta 7: IF İfadeleri</a><br>

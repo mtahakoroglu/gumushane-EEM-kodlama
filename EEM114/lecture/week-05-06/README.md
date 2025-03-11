@@ -106,3 +106,97 @@ print(f"İsimler listesinin son hâlinde {len(names)} eleman vardır.")
 print(f"Çıkarılan isimler = {exported_names}")
 print(f"Çıkarılanlar listesinde {len(exported_names)} eleman vardır.")
 ```
+
+<h4>DEBUGGING ÖRNEĞİ</h4>
+
+<p align="justify">Bu örnekte Python'da <b>debug</b> modunda kodu istediğimiz satırlarda durdura durdura kodu çalıştırmayı göreceğiz. İngilizce'de böcek kelimesinin karşılığı <b>bug</b>. Dolayısıyla <b>debug</b> böceklerden temizlemek mânâsına geliyor. Buradaki analoji kodumuzu hatalardan temizlemek oluyor yâni. İlgili videoyu izlemek için <a href="https://www.youtube.com">tıklayınız</a>.</p>
+
+<b>list_methods_debugging.py</b>
+
+```
+names = ["Abdirahim", "Manuel", "Ziya", "İbrahim"]
+print(f"names = {names}")
+print("Listenin sonuna yeni bir isim ekleyelim:")
+names.append("Jesuno")
+print(f"names = {names}")
+print("Listenin sonuna bir isim daha ekleyelim:")
+names.append("Abdullah")
+print(f"names = {names}")
+print("Listenin başına yeni bir isim ekleyelim:")
+names.insert(0, "Bonaventura")
+print(f"names = {names}")
+print("Listenin başından ikinci sıraya yeni bir isim ekleyelim:")
+names.insert(1, "Willy")
+print(f"names = {names}")
+print("Listenin başından üçüncü sıradaki ismi silelim:")
+names.pop(2)
+print(f"names = {names}")
+print("Listenin başından beşinci ismi silelim:")
+names.remove(names[4])
+print(f"names = {names}")
+```
+
+<h4>LİSTEDEN ÇIKARDIĞIMIZ ELEMANLARI AYRI BİR LİSTEDE TOPLAMAK - YENİ ÖRNEK</h4>
+
+<p align="justify">Aşağıda while döngüsü ile çözümü verilen problemin videosunu izlemek için <a href="https://www.youtube.com">tıklayınız</a>.</p>
+
+<b>popped_elements_new_list.py</b>
+
+```
+names = ["Ali", "berat", "Cindy", "davud", "SAFA",
+         "Ece", "sefa", "Gizem", "Selin", "İsmail"]
+print(f"names = {names}")
+print(f"names isimli listede {len(names)} kişi vardır.")
+# listeden baş harfi S ile başlayan isimleri listeden çıkaracağız
+popped_names = []
+i = 0
+while i < len(names):
+    if names[i][0].upper() == "S":
+        popped_names.append(names.pop(i))
+    else:
+        i += 1
+print(f"Çıkarılan isimler = {popped_names}")
+print(f"İlk listenin son hâli = {names}")
+```
+
+<h4>LİSTEDEKİ NEGATİF ELEMAN SAYISINI BULMA</h4>
+
+<p align="justify">Aşağıda verilen listede yer eleman negatif eleman sayısını bulunuz. İlgili videoyu izlemek için <a href="https://www.youtube.com">tıklayınız</a>.</p>
+
+<b>list_number_of_negative_elements.py</b>
+
+```
+numbers = [2, 7, -8, 12, 5, -34, 56, 15, -3] # Bir Python listesi
+print(f"numbers = {numbers}")
+print(f"numbers isimli listenin uzunluğu {len(numbers)}.")
+# numbers isimli listenin elemanlarını dolaşarak negatif eleman sayısını bulalım
+count = 0
+for number in numbers:
+    if number < 0:
+        count += 1
+print(f"numbers isimli listenin içinde {count} tane negatif sayı var.")
+```
+
+<h4>FOR DÖNGÜSÜNDE range() FONKSİYONUYLA SAYISAL LİSTELER YAPMA</h4>
+
+<p align="justify">Kitapta sayfa 61' denk gelen bu konuyla ilgili videoyu izlemek için <a href="https://www.youtube.com">tıklayınız</a>.</p>
+
+<b>for_loop_range_example_1.py</b>
+
+```
+for value in range(1,5):
+    print(value)
+```
+
+<b>for_loop_range_example_1.py</b>
+
+```
+for value in range(1,6):
+    print(value)
+```
+
+<h5>range() ile Liste Oluşturma</h5>
+
+<p align="justify">Burada <b>range()</b> fonksiyonunu <b>list()</b> fonksiyonun içinde kullanarak liste üretmeyi göreceğiz. İlgili videoyu izlemek için <a href="https://www.youtube.com">tıklayınız</a>.</p>
+
+<h5>Hesaplanmış Listeler</h5>
