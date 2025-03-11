@@ -179,24 +179,86 @@ print(f"numbers isimli listenin içinde {count} tane negatif sayı var.")
 
 <h4>FOR DÖNGÜSÜNDE range() FONKSİYONUYLA SAYISAL LİSTELER YAPMA</h4>
 
-<p align="justify">Kitapta sayfa 61' denk gelen bu konuyla ilgili videoyu izlemek için <a href="https://www.youtube.com">tıklayınız</a>.</p>
+<p align="justify">Aşağıdaki kodların çıktısı nedir? Kitapta sayfa 61' denk gelen bu konuyla ilgili videoyu izlemek için <a href="https://www.youtube.com">tıklayınız.</a>.</p>
 
 <b>for_loop_range_example_1.py</b>
 
 ```
-for value in range(1,5):
+for value in range(1, 8):
     print(value)
 ```
 
-<b>for_loop_range_example_1.py</b>
+<b>for_loop_range_example_2.py</b>
 
 ```
-for value in range(1,6):
-    print(value)
+start, stop, T = 4, 33, 3
+for i in range(start, stop+1, T):
+    print(i, end=" ")
+```
+
+<b>for_loop_range_example_2.py</b>
+
+```
+for k in range(2, 25, 4):
+    print(3*k-1, end=" ")
+
 ```
 
 <h5>range() ile Liste Oluşturma</h5>
 
 <p align="justify">Burada <b>range()</b> fonksiyonunu <b>list()</b> fonksiyonun içinde kullanarak liste üretmeyi göreceğiz. İlgili videoyu izlemek için <a href="https://www.youtube.com">tıklayınız</a>.</p>
 
-<h5>Hesaplanmış Listeler</h5>
+```
+numbers = list(range(1, 11))
+```
+
+```
+even_numbers = list(range(2, 11, 2))
+```
+
+```
+odd_numbers = list(range(1, 10, 2))
+```
+
+
+<h5>Hesaplanmış Listeler (List Comprehensions)</h5>
+
+<p align="justify">Aşağıdaki şekilde yapabiliriz.</p>
+
+<b>squares.py</b>
+
+```
+squares = []
+for value in range(1,11):
+    squares.append(value**2)
+print(squares)
+```
+
+<p align="justify">Aşağıdaki şekilde hesaplanmış listeler (list comprehension) metoduyla kısaca yapabiliriz.</p>
+
+```
+squares = [value**2 for value in range(1, 11)]
+```
+
+<h4>TUPLE (ELEMANLARI DEĞİŞTİRİLEMEYEN LİSTE - IMMUTABLE LIST)</h4>
+
+<p align="justify">Listelerin elemanlarını yeniden atayabildik ve hatta istediklerimizi silebildik. Burada ismi geçen <b>TUPLE</b> veri yapısında ise elemanları değiştiremiyoruz (immutable). Ancak aynı isimle yeniden bir <b>TUPLE</b> tanımlayabiliyoruz. <b>TUPLE</b> veri yapısı bazen bir satırda birden fazla değişken atamak için kullanılarak yer kazandırdığından bu yapıyı sık sık tercih ediyoruz.</p>
+
+<b>tuple_example.py</b>
+
+```
+# üç farklı değişkeni aynı satırda atayalım
+age, name, weight = 20, "Arhan", 88.2
+print(f"age = {age}, name = {name}, weight = {weight}")
+# değişiklik yapalım
+age, name, weight = 20, "Orhan", 88.2
+print(f"age = {age}, name = {name}, weight = {weight}")
+# TUPLE: demet manasına geliyor
+COLOR = (255, 255, 255) # beyaz renk kodu
+print(f"COLOR = {COLOR}   type(COLOR) = {type(COLOR)})")
+# COLOR isimli TUPLE'ın elemanlarını değiştirmeye çalışalım
+COLOR[0] = 0 # hata verecektir
+# COLOR isimli TUPLE'ı yeniden tanımlayalım
+COLOR = (0, 0, 0) # siyah renk kodu
+print(f"COLOR = {COLOR}")
+```
