@@ -109,9 +109,9 @@ print(f"Çıkarılanlar listesinde {len(exported_names)} eleman vardır.")
 
 <h4>DEBUGGING ÖRNEĞİ</h4>
 
-<p align="justify">Bu örnekte Python'da <b>debug</b> modunda kodu istediğimiz satırlarda durdura durdura kodu çalıştırmayı göreceğiz. İngilizce'de böcek kelimesinin karşılığı <b>bug</b>. Dolayısıyla <b>debug</b> böceklerden temizlemek mânâsına geliyor. Buradaki analoji kodumuzu hatalardan temizlemek oluyor yâni. İlgili videoyu izlemek için <a href="https://www.youtube.com">tıklayınız</a>.</p>
+<p align="justify">Bu örnekte Python'da <b>debug</b> modunda kodu istediğimiz satırlarda durdura durdura kodu çalıştırmayı göreceğiz. İngilizce'de böcek kelimesinin karşılığı <b>bug</b>. Dolayısıyla <b>debug</b> böceklerden temizlemek mânâsına geliyor. Buradaki analoji kodumuzu hatalardan temizlemek oluyor yâni. İlgili videoyu izlemek için <a href="https://www.youtube.com/watch?v=gLYAumTvjG0">tıklayınız</a>.</p>
 
-<b>list_methods_debugging.py</b>
+<b>debugging_example.py</b>
 
 ```
 names = ["Abdirahim", "Manuel", "Ziya", "İbrahim"]
@@ -136,9 +136,7 @@ names.remove(names[4])
 print(f"names = {names}")
 ```
 
-<h4>LİSTEDEN ÇIKARDIĞIMIZ ELEMANLARI AYRI BİR LİSTEDE TOPLAMAK - YENİ ÖRNEK</h4>
-
-<p align="justify">Aşağıda while döngüsü ile çözümü verilen problemin videosunu izlemek için <a href="https://www.youtube.com">tıklayınız</a>.</p>
+<h4>LİSTEDEN ÇIKARDIĞIMIZ ELEMANLARI AYRI BİR LİSTEDE TOPLAMAK - BAŞKA BİR ÖRNEK</h4>
 
 <b>popped_elements_new_list.py</b>
 
@@ -177,9 +175,9 @@ for number in numbers:
 print(f"numbers isimli listenin içinde {count} tane negatif sayı var.")
 ```
 
-<h4>FOR DÖNGÜSÜNDE range() FONKSİYONUYLA SAYISAL LİSTELER YAPMA</h4>
+<h4>FOR DÖNGÜSÜNDE <b>range()</b> FONKSİYONUYLA SAYISAL LİSTELER YAPMA</h4>
 
-<p align="justify">Aşağıdaki kodların çıktısı nedir? Kitapta sayfa 61' denk gelen bu konuyla ilgili videoyu izlemek için <a href="https://www.youtube.com">tıklayınız.</a>.</p>
+<p align="justify">Aşağıdaki kodların çıktısı nedir? Kitapta sayfa 61'e denk gelen bu konuyla ilgili videoyu izlemek için <a href="https://www.youtube.com">tıklayınız.</a>.</p>
 
 <b>for_loop_range_example_1.py</b>
 
@@ -196,15 +194,20 @@ for i in range(start, stop+1, T):
     print(i, end=" ")
 ```
 
-<b>for_loop_range_example_2.py</b>
+<b>for_loop_range_example_3.py</b>
 
 ```
 for k in range(2, 25, 4):
     print(3*k-1, end=" ")
-
 ```
 
-<h5>range() ile Liste Oluşturma</h5>
+<p align="justify">Konsol ekranına</p>
+
+<b>2 6 10 14 18 22 26 30 34 38 42 46 50</b>
+
+<p align="justify">yazdıran (iki satırlık) kodu bir döngü oluşturarak yazınız. İsterseniz for döngüsü ve range() fonksiyonu ile yapınız, isterseniz de while döngüsü ile yapınız.</b>
+
+<h4><b>range()</b> ile LİSTE OLUŞTURMA</h4>
 
 <p align="justify">Burada <b>range()</b> fonksiyonunu <b>list()</b> fonksiyonun içinde kullanarak liste üretmeyi göreceğiz. İlgili videoyu izlemek için <a href="https://www.youtube.com">tıklayınız</a>.</p>
 
@@ -221,7 +224,7 @@ odd_numbers = list(range(1, 10, 2))
 ```
 
 
-<h5>Hesaplanmış Listeler (List Comprehensions)</h5>
+<h4>Hesaplanmış Listeler (List Comprehensions)</h4>
 
 <p align="justify">Aşağıdaki şekilde yapabiliriz.</p>
 
@@ -234,7 +237,7 @@ for value in range(1,11):
 print(squares)
 ```
 
-<p align="justify">Aşağıdaki şekilde hesaplanmış listeler (list comprehension) metoduyla kısaca yapabiliriz.</p>
+<p align="justify">Aynı listeyi hesaplanmış listeler (list comprehension) metoduyla çok daha kısa bir şekilde oluşturabiliriz.</p>
 
 ```
 squares = [value**2 for value in range(1, 11)]
