@@ -177,7 +177,7 @@ print(f"numbers isimli listenin içinde {count} tane negatif sayı var.")
 
 <h4>FOR DÖNGÜSÜNDE <b>range()</b> FONKSİYONUYLA SAYISAL LİSTELER YAPMA</h4>
 
-<p align="justify">Aşağıdaki kodların çıktısı nedir? Kitapta sayfa 61'e denk gelen bu konuyla ilgili videoyu izlemek için <a href="https://www.youtube.com">tıklayınız.</a>.</p>
+<p align="justify">Aşağıdaki kodların çıktısı nedir? Kitapta sayfa 61'e denk gelen bu konuyla ilgili videoyu izlemek için <a href="https://www.youtube.com/watch?v=-63E_a_w7_A">tıklayınız.</a>.</p>
 
 <b>for_loop_range_example_1.py</b>
 
@@ -201,11 +201,19 @@ for k in range(2, 25, 4):
     print(3*k-1, end=" ")
 ```
 
+<h4>FOR ve WHILE DÖNGÜSÜYLE EKRANA DEĞİŞİK PATTERN'LERDE SAYILAR YAZIRMA</h4>
+
+<p align="justify">İlgili videoyu izlemek için <a href="https://www.youtube.com/watch?v=C79CKSX2vcA">tıklayınız.</a>.</p>
+
 <p align="justify">Konsol ekranına</p>
 
 <b>2 6 10 14 18 22 26 30 34 38 42 46 50</b>
 
 <p align="justify">yazdıran (iki satırlık) kodu bir döngü oluşturarak yazınız. İsterseniz for döngüsü ve range() fonksiyonu ile yapınız, isterseniz de while döngüsü ile yapınız.</b>
+
+<h3>FOR ve WHILE DÖNGÜSÜYLE EKRANA DEĞİŞİK PATTERN'LERDE SAYILAR YAZIRMA (ÇÖZÜM)</h3>
+
+<img src="figure/for_while_loop_example.png" alt="for and while loop example" width="250" height="auto">
 
 <h4><b>range()</b> ile LİSTE OLUŞTURMA</h4>
 
