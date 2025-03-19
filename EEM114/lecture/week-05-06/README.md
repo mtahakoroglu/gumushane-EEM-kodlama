@@ -217,6 +217,72 @@ for k in range(2, 25, 4):
 
 <img src="figure/for_while_loop_example.png" alt="for and while loop example" width="250" height="auto">
 
+
+<h4><b>range()</b> ile LİSTE OLUŞTURMA</h4>
+
+<p align="justify">Burada <b>range()</b> fonksiyonunu <b>list()</b> fonksiyonunun içinde kullanarak liste üretmeyi göreceğiz. İlgili videoyu izlemek için <a href="https://www.youtube.com/watch?v=WT3YA3t61sk">tıklayınız</a>.</p>
+
+```
+numbers = list(range(1, 11))
+```
+
+```
+even_numbers = list(range(2, 11, 2))
+```
+
+```
+odd_numbers = list(range(1, 10, 2))
+```
+
+<h4>LİSTEYİ KOPYALARAK BAŞKA BİR LİSTE OLUŞTURMA</h4>
+
+<p align="justify">Birçok yerde çok sık karşımıza çıkacak bir durum. İlgili videoyu izlemek için <a href="https://www.youtube.com/watch?v=kqLzTyHyLdU">tıklayınız</a>.</p>
+
+<b>copy_list.py</b>
+
+```
+numbers = [3, 5, 78, -23, 6, -8]
+numbers2 = numbers
+numbers.append(10)
+print(f"numbers = {numbers}")
+print(f"numbers2 = {numbers2}")
+# iki liste ismi de aynı listeyi gösteriyor.
+# bunu istemiyoruz. listeyi kopyalayalım.
+numbers = [3, 5, 78, -23, 6, -8]
+numbers2 = numbers[:]
+numbers.append(10)
+print(f"numbers = {numbers}")
+print(f"numbers2 = {numbers2}")
+# şimdi numbers2 listesi numbers listesinin kopyası oldu.
+# ikinci yol olarak bir lite metodu olan copy() metodunu kullanabiliriz.
+numbers = [3, 5, 78, -23, 6, -8]
+numbers2 = numbers.copy()
+numbers.append(10)
+print(f"numbers = {numbers}")
+print(f"numbers2 = {numbers2}")
+```
+
+<h4>Hesaplanmış Listeler (List Comprehensions)</h4>
+
+<p align="justify">Aşağıdaki şekilde yapabiliriz.</p>
+
+<b>squares.py</b>
+
+```
+squares = []
+for value in range(1,11):
+    squares.append(value**2)
+print(squares)
+```
+
+<p align="justify">Aynı listeyi hesaplanmış listeler (list comprehension) metoduyla çok daha kısa bir şekilde oluşturabiliriz.</p>
+
+<b>squares_list_comprehension.py</b>
+
+```
+squares = [value**2 for value in range(1, 11)]
+```
+
 <h4>TUPLE (ELEMANLARI DEĞİŞTİRİLEMEYEN LİSTE - IMMUTABLE LIST)</h4>
 
 <p align="justify">Listelerin elemanlarını yeniden atayabildik ve hatta istediklerimizi silebildik. Burada ismi geçen <b>TUPLE</b> veri yapısında ise elemanları değiştiremiyoruz (immutable). Ancak aynı isimle yeniden bir <b>TUPLE</b> tanımlayabiliyoruz. <b>TUPLE</b> veri yapısı bazen bir satırda birden fazla değişken atamak için kullanılarak yer kazandırdığından bu yapıyı sık sık tercih ediyoruz.</p>
@@ -238,54 +304,4 @@ COLOR[0] = 0 # hata verecektir
 # COLOR isimli TUPLE'ı yeniden tanımlayalım
 COLOR = (0, 0, 0) # siyah renk kodu
 print(f"COLOR = {COLOR}")
-```
-
-<h4>LİSTEYİ KOPYALARAK BAŞKA BİR LİSTE OLUŞTURMA</h4>
-
-<p align="justify">Birçok yerde çok sık karşımıza çıkacak bir durum. İlgili videoyu izlemek için <a href="https://www.youtube.com">tıklayınız</a>.</p>
-
-<b>list_copy.py</b>
-
-```
-numbers = [3, 7, -12, 34, -5]
-numbers2 = numbers
-numbers.append(-9)
-print(f"numbers = {numbers}")
-```
-
-
-<h4><b>range()</b> ile LİSTE OLUŞTURMA</h4>
-
-<p align="justify">Burada <b>range()</b> fonksiyonunu <b>list()</b> fonksiyonun içinde kullanarak liste üretmeyi göreceğiz. İlgili videoyu izlemek için <a href="https://www.youtube.com">tıklayınız</a>.</p>
-
-```
-numbers = list(range(1, 11))
-```
-
-```
-even_numbers = list(range(2, 11, 2))
-```
-
-```
-odd_numbers = list(range(1, 10, 2))
-```
-
-
-<h4>Hesaplanmış Listeler (List Comprehensions)</h4>
-
-<p align="justify">Aşağıdaki şekilde yapabiliriz.</p>
-
-<b>squares.py</b>
-
-```
-squares = []
-for value in range(1,11):
-    squares.append(value**2)
-print(squares)
-```
-
-<p align="justify">Aynı listeyi hesaplanmış listeler (list comprehension) metoduyla çok daha kısa bir şekilde oluşturabiliriz.</p>
-
-```
-squares = [value**2 for value in range(1, 11)]
 ```
