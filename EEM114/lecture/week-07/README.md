@@ -33,7 +33,7 @@ for car in cars:
         print(car.title())
 ```
 
-<p align="justify">Aşağıda ders kitabından aldığımız <b>cars.py</b> kodundan hareketle kendi ürettiğimiz <b>names.py</b> kodunu bulabilirsiniz. İlgili video için <a href="https://www.youtube.com/watch?v=IgQNqG20otU">tıklayınız</a>.</p>
+<p align="justify">Aşağıda ders kitabından aldığımız <b>cars.py</b> kodundan hareketle kendi ürettiğimiz <b>names.py</b> kodunu bulabilirsiniz. İlgili video için <a href="https://www.youtube.com/watch?v=g0k7FTxe_3A">tıklayınız</a>.</p>
 
 <p align="justify"><b>names.py</b></p>
 
@@ -48,7 +48,7 @@ for name in names:
 
 <h4>Başka Bir Örnek (if-elif-else koşullu ifadeleri)</h4>
 
-<p align="justify">Kitaptan koşullu ifadelerle ilgili bir başka örnek: <b>hayat.py</b> isimli kodun videosu için <a href="https://www.youtube.com/watch?v=SChaa65x1Lo&list=PLMoe16OQDeeCpsXqSpWs0LqOYUjlIu_jg&index=28">tıklayınız</a>.</p>
+<p align="justify">Kitaptan koşullu ifadelerle ilgili bir başka örnek: <b>hayat.py</b> isimli kodun videosu için <a href="https://www.youtube.com/watch?v=r2GBGGf2aHk">tıklayınız</a>.</p>
 
 <p align="justify">(Hayatın Aşamaları): Bir insanın hayatta hangi aşamada olduğunu belirleyen bir if-elif-else zinciri yazınız. Kullanıcıya yaşını sorarak kullanıcının girdiği değeri <b>age</b> değişkenine atayın ve daha sonra:</p>
 
@@ -79,7 +79,7 @@ else:
     print("Yaşlısın.")
 ```
 
-<p align="justify">Another example about the conditional statements (from the course book): <b>stages_in_life.py</b> click on the <a href="https://www.youtube.com/watch?v=tOWbycYozGk&list=PLMoe16OQDeeCpsXqSpWs0LqOYUjlIu_jg&index=29">link</a> to watch the related video.</p>
+<p align="justify">Another example about the conditional statements (from the course book): <b>stages_in_life.py</b>.</p>
 
 <p align="justify">(Stages of Life): Write an if-elif-else chain that determines a person's stage of life. Get the user's age by asking him/her a related question in the console and assign the entered value to <b>age</b> variable and then:</p>
 
