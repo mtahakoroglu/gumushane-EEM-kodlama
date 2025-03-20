@@ -20,7 +20,7 @@ else:
 
 <h4>Python Listelerinde Döngü, Koşullu İfade ve String Metotları Egzersizleri</h4>
 
-<p align="justify">Aşağıda ders kitabından aldığımız <b>cars.py</b> kodunu bulabilirsiniz. İlgili video için <a href="https://www.youtube.com/watch?v=jaXPlEWvgxQ">tıklayınız</a>.</p>
+<p align="justify">Aşağıda ders kitabından aldığımız <b>cars.py</b> kodunu bulabilirsiniz. İlgili video için <a href="https://www.youtube.com/watch?v=g0k7FTxe_3A">tıklayınız</a>.</p>
 
 <p align="justify"><b>cars.py</b></p>
 
@@ -33,7 +33,7 @@ for car in cars:
         print(car.title())
 ```
 
-<p align="justify">Aşağıda ders kitabından aldığımız <b>cars.py</b> kodundan hareketle kendi ürettiğimiz <b>names.py</b> kodunu bulabilirsiniz. İlgili video için <a href="https://www.youtube.com/watch?v=g0k7FTxe_3A">tıklayınız</a>.</p>
+<p align="justify">Aşağıda ders kitabından aldığımız <b>cars.py</b> kodundan hareketle kendi ürettiğimiz <b>names.py</b> kodunu bulabilirsiniz.</a>.</p>
 
 <p align="justify"><b>names.py</b></p>
 
