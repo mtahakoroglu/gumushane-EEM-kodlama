@@ -285,7 +285,7 @@ squares = [value**2 for value in range(1, 11)]
 
 <h4>TUPLE (ELEMANLARI DEĞİŞTİRİLEMEYEN LİSTE - IMMUTABLE LIST)</h4>
 
-<p align="justify">Listelerin elemanlarını yeniden atayabildik ve hatta istediklerimizi silebildik. Burada ismi geçen <b>TUPLE</b> veri yapısında ise elemanları değiştiremiyoruz (immutable). Ancak aynı isimle yeniden bir <b>TUPLE</b> tanımlayabiliyoruz. <b>TUPLE</b> veri yapısı bazen bir satırda birden fazla değişken atamak için kullanılarak yer kazandırdığından bu yapıyı sık sık tercih ediyoruz.</p>
+<p align="justify">Listelerin elemanlarını yeniden atayabildik ve hatta istediklerimizi silebildik. Burada ismi geçen <b>TUPLE</b> veri yapısında ise elemanları değiştiremiyoruz (immutable). Ancak aynı isimle yeniden bir <b>TUPLE</b> tanımlayabiliyoruz. <b>TUPLE</b> veri yapısı bazen bir satırda birden fazla değişken atamak için kullanılarak yer kazandırdığından bu yapıyı sık sık tercih ediyoruz. Video için <a href="https://www.youtube.com/watch?v=ybWV-AhTczo">tıklayınız</a>.</p>
 
 <b>tuple_example.py</b>
 

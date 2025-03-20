@@ -1,6 +1,6 @@
-<h3>IF İFADELERİ</h3>
+<h3>KOŞULLU İFADELER ve DÖNGÜLER</h3>
 
-<p align="justify">İçerisinde VE ve VEYA mantık kapılarını (AND and OR logic gates) tekrar ettiğimiz koşullu ifade örnek kodunun çıktısını görmek için <a href="https://www.youtube.com">tıklayınız</a>.</p>
+<p align="justify">İçerisinde VE ve VEYA mantık kapılarını (AND and OR logic gates) tekrar ettiğimiz koşullu ifade örnek kodunun çıktısını görmek için <a href="https://www.youtube.com/watch?v=R_e8fIgLobM">tıklayınız</a>.</p>
 
 ```
 flag1, flag2 = False, True
@@ -46,7 +46,7 @@ for name in names:
         print(name.lower())
 ```
 
-<h4>Başka Bir Örnek (if-else if-else koşullu ifadeleri)</h4>
+<h4>Başka Bir Örnek (if-elif-else koşullu ifadeleri)</h4>
 
 <p align="justify">Kitaptan koşullu ifadelerle ilgili bir başka örnek: <b>hayat.py</b> isimli kodun videosu için <a href="https://www.youtube.com/watch?v=SChaa65x1Lo&list=PLMoe16OQDeeCpsXqSpWs0LqOYUjlIu_jg&index=28">tıklayınız</a>.</p>
 
@@ -61,7 +61,7 @@ for name in names:
 <li>Kişi 65 yaş ve üzeri ise bu kişinin yaşlı olduğunu belirten bir mesajı ekrana yazınız.</li>
 </ul>
 
-<p align="justify"><b>hayat.py</b></p>
+<p align="justify"><b>hayat_if_elif_else.py</b></p>
 
 ```
 age = int(input("Kaç yaşındasın? "))

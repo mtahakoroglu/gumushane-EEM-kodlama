@@ -9,4 +9,4 @@
 
 <a href="https://github.com/mtahakoroglu/gumushane-EEM-kodlama/tree/main/EEM114/lecture/week-05-06" target="_blank">Hafta 5-6: Listelerle Çalışma</a><br>
 
-<a href="https://github.com/mtahakoroglu/gumushane-EEM-kodlama/tree/main/EEM114/lecture/week-07" target="_blank">Hafta 7: IF İfadeleri</a><br>
+<a href="https://github.com/mtahakoroglu/gumushane-EEM-kodlama/tree/main/EEM114/lecture/week-07" target="_blank">Hafta 7: Koşullu İfadeler ve Döngüler</a><br>
