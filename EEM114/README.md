@@ -11,4 +11,4 @@
 
 <a href="https://github.com/mtahakoroglu/gumushane-EEM-kodlama/tree/main/EEM114/lecture/week-07" target="_blank">Hafta 7: Koşullu İfadeler ve Döngüler</a><br>
 
-<a href="https://github.com/mtahakoroglu/gumushane-EEM-kodlama/tree/main/EEM114/lecture/week-09-10" target="_blank">Hafta 9-10: NumPy ile 1b-2b Diziler ve </a><br>
+<a href="https://github.com/mtahakoroglu/gumushane-EEM-kodlama/tree/main/EEM114/lecture/week-09-10" target="_blank">Hafta 9-10: NumPy ile 1b-2b Diziler ve Rasgele Sayı Üretimi</a><br>
