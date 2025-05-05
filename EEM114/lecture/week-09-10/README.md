@@ -110,21 +110,18 @@ print(f"A:\n{A}") # A matrisini ekrana yazdır
 
 <h4>SAYI TAHMİN OYUNU</h4>
 
-<p align="justify">Tahmin etmek istediğimiz sayı bilgisayar tarafından Python'da <b>numpy</b> paketi ile rasgele belirleniyor. Kullanıcı girişle bu sayıyı tahmin etmeye çalışıyor. İlgili videoyu izlemek için <a href="https://www.youtube.com/">tıklayınız</a>.</p>
+<p align="justify">Tahmin etmek istediğimiz sayı bilgisayar tarafından Python'da <b>numpy</b> paketi ile rasgele belirleniyor. Kullanıcı girişle bu sayıyı tahmin etmeye çalışıyor. İlgili videoyu izlemek için <a href="https://www.youtube.com/watch?v=d69tWKi7b6o">tıklayınız</a>.</p>
 
 ```
-# 0 ile 100 arasında (dâhili) rasgele bir sayı üretelim
 from numpy.random import randint
-minNumber, maxNumber = 0, 100
-number = randint(minNumber, maxNumber+1)
+n = randint(1, 101)  # 1 ile 100 arasında rastgele bir sayı üretelim
 while True:
-    x = int(input("Bir tam sayı giriniz: "))
-    if x == number:
-        print("Tebrikler doğru tahmin ettiniz.")
+    number = int(input("Bir sayı girin: "))
+    if number == n:
+        print("Tebrikler! Doğru tahmin ettiniz.")
         break
-    elif x < number:
-        print("Daha büyük bir sayı giriniz.")
+    elif number < n:
+        print("Tahmininiz çok düşük. Sayıyı artırın.")
     else:
-        print("Daha küçük bir sayı giriniz.")
+        print("Tahmininiz çok yüksek. Sayıyı azaltın.")
 ```
-
