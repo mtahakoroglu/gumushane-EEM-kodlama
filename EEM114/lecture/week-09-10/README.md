@@ -10,9 +10,9 @@ pip install numpy
 
 <h4>NUMPY ile 1b DİZİLER</h4>
 
-<p align="justify">Daha önce Python listelerinde yaptığımız şekilde, verilen bir dizinin değişik yerlerine elemanlar ekleyelim ve değişik yerlerinden elemanları çıkaralım/silelim. Bu arada PowerShell'de hızlıca <b>numbers</b> isimli değişkenin veri tipine <b>type(numbers)</b> fonksiyonu ile bakalım. İlgili videoyu izlemek için aşağıdaki NumPy logosu resmine tıklayınız.</p>
+<p align="justify">Daha önce Python listelerinde yaptığımız şekilde, verilen bir dizinin değişik yerlerine elemanlar ekleyelim ve değişik yerlerinden elemanları çıkaralım/silelim. Bu arada PowerShell'de hızlıca <b>numbers</b> isimli değişkenin veri tipine <b>type(numbers)</b> fonksiyonu ile bakalım. İlgili videoyu izlemek için <a href="https://www.youtube.com/watch?v=NEWFw1r-e6Y">tıklayınız</a>.</p>
 
-<a href="https://www.youtube.com"><img src="döküman/NumPy.png" alt="numpy-1d_array" width=500 height=auto></a>
+<img src="döküman/NumPy.png" alt="numpy-1d_array" width=500 height=auto>
 
 <b>numpy_1d_array.py</b>
 
@@ -72,36 +72,37 @@ g = A[2:4,:]; print(f"g = {g}")
 
 <h4>NUMPY ile RASGELE MATRİS OLUŞTURMA</h4>
 
-<p>İlgili video için <a href="https://www.youtube.com">tıklayınız</a>.</p>
+<p align="justify">Elemanları -10 ile 10 arasında (dâhili) değer alan 3 satır 5 sütunluk bir matrisi rasgele bir biçimde <b>numpy</b> ile üretiniz.</p>
+
+```
+from numpy.random import randint
+
+r, c = 3, 5 # satır ve sütun sayısı
+minA, maxA = -10, 11 # matrisin elemanlarının alabileceği minimum ve maksimum değerler
+A = randint(minA, maxA, (r, c)) # r x c boyutunda A matrisini oluştur
+print(f"A:\n{A}") # A matrisini ekrana yazdır
+```
+
+<p align="justify">Yukarıdaki örnekte kodu koşturduğumuzda o anda rasgele olarak</p>
+
+$$\begin{bmatrix} \end{bmatrix}$$
+
+<p align="justify">matrisini üretti. Bu matrisi manuel olarak <b>numpy</b>'da oluşturmak için aşağıdaki kodu kullanırız.</p>
+
+<b>random_matrix_generation.py</b>
 
 ```
 import numpy as np
-from numpy.random import randint
-r, c = 3, 6 # row, column
-A = randint(-25,51,(r,c))
-print(A)
-B = np.array([[2, 8, 4], [-5, 6, 12], [7, 3, -15]])
-print(B)
+# Üretilen matrisi manuel olarak oluşturalım
+A = np.array([[9, -8, -1, 1, 10], [-9, 1, 6, 10, -8], [-2, 6, -3, 10, 4]])
+print(f"A:\n{A}") # A matrisini ekrana yazdır
 ```
+
+<p align="justify">İlgili video için <a href="https://www.youtube.com/watch?v=5yNeR4MZ8ZE">tıklayınız</a>.</p>
 
 <h4>SAYI TAHMİN OYUNU</h4>
 
-<p align="justify">Tahmin etmek istediğimiz bir sayı var. Kullanıcı girişle bu sayıyı tahmin etmeye çalışıyor. İlgili videoyu izlemek için <a href="https://www.youtube.com">tıklayınız</a>.</p>
-
-```
-number = 41
-while True:
-    x = int(input("Bir tam sayı giriniz: "))
-    if x == number:
-        print("Tebrikler doğru tahmin ettiniz.")
-        break
-    elif x < number:
-        print("Daha büyük bir sayı giriniz.")
-    else:
-        print("Daha küçük bir sayı giriniz.")
-```
-
-<p align="justify">Tahmin etmek istediğimiz sayı bu sefer bilgisayara tarafından Python'da numpy paketi ile rasgele belirleniyor. Kullanıcı girişle bu sayıyı tahmin etmeye çalışıyor. İlgili videoyu izlemek için <a href="https://www.youtube.com">tıklayınız</a>.</p>
+<p align="justify">Tahmin etmek istediğimiz sayı bilgisayar tarafından Python'da <b>numpy</b> paketi ile rasgele belirleniyor. Kullanıcı girişle bu sayıyı tahmin etmeye çalışıyor. İlgili videoyu izlemek için <a href="https://www.youtube.com/">tıklayınız</a>.</p>
 
 ```
 # 0 ile 100 arasında (dâhili) rasgele bir sayı üretelim
@@ -119,5 +120,3 @@ while True:
         print("Daha küçük bir sayı giriniz.")
 ```
 
-<h4>POPULER PYTHON KÜTÜPHANELERİNDE NUMPY KULLANIMI</h4>
-<p align="justify">Özellikle nümerik veriler (e.g., int, float) için <a href="https://6sense.com/tech/data-science-machine-learning">popüler Python kütüphanelerinin</a> (e.g., TensorFlow, PyTorch, OpenCV, Keras, Scikit-Learn) hepsi NumPy paketini/kütüphanesini (package/library) kullanmakta. Örnek olarak bir görüntü işleme (image processing), bilgisayarlı görü (computer vision), makine öğrenmesi (machine learning) ve derin öğrenme (deep learning) kütüphanesi olan OpenCV'de bir fotoğrafın bilgisayar hafızasında Python API'da hangi veri tipi olarak tutulduğuna bakalım. Bunun için Anaconda yüklemek ve Anaconda'da <b>opencv</b> isimli bir sanal ortam (virtual environment) oluşturup orada bir resmi okuyup ekranda görüntüleyen bir kod yazalım ve en sonunda yine <b>type()</b> komutuyla konsolda fotoğrafı tutan veri tipini görüntüleyelim. İlgili videoyu izlemek için tıklayınız.</p>
