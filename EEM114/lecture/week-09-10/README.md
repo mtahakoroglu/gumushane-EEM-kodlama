@@ -85,7 +85,15 @@ print(f"A:\n{A}") # A matrisini ekrana yazdır
 
 <p align="justify">Yukarıdaki örnekte kodu koşturduğumuzda o anda rasgele olarak</p>
 
-$$\begin{bmatrix} 9 & -8 & -1 & 1 & 10\\-9 & 1 & 6 & 10 & -8\\ -2 & 6 & -3 & 10 & 4\end{bmatrix}$$
+$$
+\left[
+\begin{array}{rrrrr}
+9 & -8 & -1 & 1 & 10 \\
+-9 & 1 & 6 & 10 & -8 \\
+-2 & 6 & -3 & 10 & 4
+\end{array}
+\right]
+$$
 
 <p align="justify">matrisini üretti. Bu matrisi manuel olarak <b>numpy</b>'da oluşturmak için aşağıdaki kodu kullanırız.</p>
 
