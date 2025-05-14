@@ -14,3 +14,7 @@
 <a href="https://github.com/mtahakoroglu/gumushane-EEM-kodlama/tree/main/EEM114/lecture/week-09-10" target="_blank">Hafta 9-10: NumPy ile 1b-2b Diziler ve Rasgele Sayı Üretimi</a><br>
 
 <a href="https://github.com/mtahakoroglu/gumushane-EEM-kodlama/tree/main/EEM114/lecture/week-11-12" target="_blank">Hafta 11-12: Popüler Kütüphanelerde NumPy Kullanımı | OpenCV Örneği</a><br>
+
+<a href="https://github.com/mtahakoroglu/gumushane-EEM-kodlama/tree/main/EEM114/lecture/week-13-14" target="_blank">Hafta 13-14: Fonksiyonlar</a><br>
+
+<a href="https://github.com/mtahakoroglu/gumushane-EEM-kodlama/tree/main/EEM114/lecture/week-15" target="_blank">Hafta 15: Sözlükler</a><br>
