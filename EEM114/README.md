@@ -18,3 +18,5 @@
 <a href="https://github.com/mtahakoroglu/gumushane-EEM-kodlama/tree/main/EEM114/lecture/week-13-14" target="_blank">Hafta 13-14: Fonksiyonlar</a><br>
 
 <a href="https://github.com/mtahakoroglu/gumushane-EEM-kodlama/tree/main/EEM114/lecture/week-15" target="_blank">Hafta 15: Sözlükler</a><br>
+
+<a href="https://github.com/mtahakoroglu/gumushane-EEM-kodlama/tree/main/EEM114/lecture/week-16" target="_blank">Hafta 16: Final Sınavı Örnek Sorular</a><br>
