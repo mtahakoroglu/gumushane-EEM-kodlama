@@ -3,20 +3,8 @@
 
 <img src="https://buzdagiyayinevi.com/wp-content/uploads/2022/02/Python-Crash-Course-Kapak-scaled.jpg" target="_blank" alt="Kapsamlı Python Kursu: Programlamaya Uygulamalı ve Proje Tabanlı Giriş kitabı sayfası" width="200" height=auto>
 
-<a href="https://github.com/mtahakoroglu/gumushane-EEM-kodlama/tree/main/Python/hafta-1-2-3" target="_blank">Hafta 1-2-3: Değişkenler ve Basit Veri Tipleri</a><br>
+<a href="https://github.com/mtahakoroglu/gumushane-EEM-kodlama/tree/main/EEM215/hafta-1-2-3-4-5" target="_blank">Hafta 1-2-3-4-5: Değişkenler, Basit Veri Tipleri, Listeler, Koşullu İfadeler, Döngüler, Numpy 1b-2b Diziler ve Rasgele Sayı Üreteci - TEKRAR</a><br>
 
-<a href="https://github.com/mtahakoroglu/gumushane-EEM-kodlama/tree/main/Python/hafta-4-5" target="_blank">Hafta 4-5: Listelere Giriş</a>
+<a href="https://github.com/mtahakoroglu/gumushane-EEM-kodlama/tree/EEM215/Python/hafta-6-7" target="_blank">Hafta 6-7: Fonksiyonlar</a>
 
-<a href="https://github.com/mtahakoroglu/gumushane-EEM-kodlama/tree/main/Python/hafta-6-7" target="_blank">Hafta 6-7: Listelerle Çalışma</a>
-
-<a href="https://github.com/mtahakoroglu/gumushane-EEM-kodlama/tree/main/Python/hafta-9-10" target="_blank">Hafta 9-10: Listelerle Çalışma - Devam</a>
-
-<a href="https://github.com/mtahakoroglu/gumushane-EEM-kodlama/tree/main/Python/hafta-11-12" target="_blank">Hafta 11-12: Numpy 1b-2b Diziler ve Rasgele Sayı Üreteci</a>
-
-<a href="https://github.com/mtahakoroglu/gumushane-EEM-kodlama/tree/main/Python/hafta-13" target="_blank">Hafta 13: Fonksiyonlar</a>
-
-<a href="https://github.com/mtahakoroglu/gumushane-EEM-kodlama/tree/main/Python/hafta-14" target="_blank">Hafta 14: Fonsiyonlar devam (matplotlib ile grafik çizdirme)</a>
-
-<a href="https://github.com/mtahakoroglu/gumushane-EEM-kodlama/tree/main/Python/hafta-15" target="_blank">Hafta 15: Fonsiyonlar devam</a>
-
-<a href="https://github.com/mtahakoroglu/gumushane-EEM-kodlama/tree/main/Python/hafta-16-final-sınavı" target="_blank">Hafta 16: Fonsiyonlar (örnek final sınavı sorusu))</a>
+<a href="https://github.com/mtahakoroglu/gumushane-EEM-kodlama/tree/EEM215/Python/hafta-8" target="_blank">Hafta 8: ARA SINAV</a>
