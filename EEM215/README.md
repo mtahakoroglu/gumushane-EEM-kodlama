@@ -3,8 +3,8 @@
 
 <img src="https://buzdagiyayinevi.com/wp-content/uploads/2022/02/Python-Crash-Course-Kapak-scaled.jpg" target="_blank" alt="Kapsamlı Python Kursu: Programlamaya Uygulamalı ve Proje Tabanlı Giriş kitabı sayfası" width="200" height=auto>
 
-<a href="https://github.com/mtahakoroglu/gumushane-EEM-kodlama/tree/main/EEM215/hafta-1-2-3-4-5" target="_blank">Hafta 1-2-3-4-5: Değişkenler, Basit Veri Tipleri, Listeler, Koşullu İfadeler, Döngüler, Numpy 1b-2b Diziler ve Rasgele Sayı Üreteci - TEKRAR</a><br>
+<a href="https://github.com/mtahakoroglu/gumushane-EEM-kodlama/tree/main/EEM215/hafta-1-2-3-4-5" target="_blank">Hafta 1-2-3-4-5: Değişkenler, Basit Veri Tipleri, Listeler, Liste Metotları, Koşullu İfadeler, Döngüler, Numpy 1b-2b Diziler ve Rasgele Sayı Üreteci - TEKRAR</a><br>
 
-<a href="https://github.com/mtahakoroglu/gumushane-EEM-kodlama/tree/EEM215/Python/hafta-6-7" target="_blank">Hafta 6-7: Fonksiyonlar</a>
+<a href="https://github.com/mtahakoroglu/gumushane-EEM-kodlama/tree/EEM215/Python/hafta-6-7" target="_blank">Hafta 6-7: Fonksiyonlar (Anaconda ve OpenCV), matplotlib ile grafik çizdirme</a>
 
 <a href="https://github.com/mtahakoroglu/gumushane-EEM-kodlama/tree/EEM215/Python/hafta-8" target="_blank">Hafta 8: ARA SINAV</a>
